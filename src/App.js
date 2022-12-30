@@ -37,7 +37,8 @@ import {
   DiceThree,
   DiceFour,
   DiceFive,
-  DiceSix
+  DiceSix,
+  OpenInNewTab
 } from "./components";
 
 const Container = styled.div`
@@ -103,7 +104,8 @@ export default function App() {
     DiceThree,
     DiceFour,
     DiceFive,
-    DiceSix
+    DiceSix,
+    OpenInNewTab
   ];
 
   return (

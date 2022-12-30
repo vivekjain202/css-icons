@@ -608,3 +608,23 @@ export const DiceSix = styled.div`
     box-shadow: 14px 0px 0 0 black, 0px 7px 0 0 black, 14px 7px 0 0 black, 0px 14px 0 0 black, 14px 14px 0 0 black;
   }
 `
+
+export const OpenInNewTab = styled.div`
+  width: 15px;
+  height: 10px;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 2px;
+    
+  &::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    border: 1px solid black;
+    top: -7px;
+    left: 6px;
+    background: white;
+    border-radius: 2px;
+  }
+`
