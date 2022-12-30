@@ -38,7 +38,8 @@ import {
   DiceFour,
   DiceFive,
   DiceSix,
-  OpenInNewTab
+  OpenInNewTab,
+  WindowsIcon
 } from "./components";
 
 const Container = styled.div`
@@ -105,7 +106,8 @@ export default function App() {
     DiceFour,
     DiceFive,
     DiceSix,
-    OpenInNewTab
+    OpenInNewTab,
+    WindowsIcon
   ];
 
   return (
