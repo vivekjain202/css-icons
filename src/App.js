@@ -30,7 +30,14 @@ import {
   Laptop,
   LaptopWithText,
   Building,
-  NotAllowed
+  NotAllowed,
+  CreditCard,
+  DiceOne,
+  DiceTwo,
+  DiceThree,
+  DiceFour,
+  DiceFive,
+  DiceSix
 } from "./components";
 
 const Container = styled.div`
@@ -89,7 +96,14 @@ export default function App() {
     Laptop,
     LaptopWithText,
     Building,
-    NotAllowed
+    NotAllowed,
+    CreditCard,
+    DiceOne,
+    DiceTwo,
+    DiceThree,
+    DiceFour,
+    DiceFive,
+    DiceSix
   ];
 
   return (
