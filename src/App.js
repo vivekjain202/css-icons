@@ -30,7 +30,9 @@ import {
   Laptop,
   LaptopWithText,
   Building,
-  NotAllowed
+  NotAllowed,
+  Gmail,
+  Instagram,
 } from "./components";
 
 const Container = styled.div`
@@ -89,7 +91,9 @@ export default function App() {
     Laptop,
     LaptopWithText,
     Building,
-    NotAllowed
+    NotAllowed,
+    Gmail,
+    Instagram,
   ];
 
   return (
