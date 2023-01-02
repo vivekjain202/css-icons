@@ -31,8 +31,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16.x'
-      - name: action-yarn
-        uses: comchangs/action-yarn@v0.1-beta
+      - name: Use node
+        run: nvm use 16
       - name: Install Dependencies
         run: yarn
       - name: Build
