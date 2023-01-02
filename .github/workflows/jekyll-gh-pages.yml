@@ -31,8 +31,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16.x'
+      - name: action-yarn
+        uses: comchangs/action-yarn@v0.1-beta
       - name: Install Dependencies
-        run: npm install
+        run: yarn
       - name: Build
         run : npm run build
       - name: Setup Pages
