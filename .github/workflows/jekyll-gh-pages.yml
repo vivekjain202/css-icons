@@ -35,12 +35,8 @@ jobs:
         run: yarn
       - name: Build
         run : npm run build
-      - name: path
-        run: pwd
       - name: Setup Pages
         uses: actions/configure-pages@v2
-      - name: path
-        run: pwd
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
