@@ -46,7 +46,8 @@ import {
   DivideSign,
   Gmail,
   Instagram,
-  Focus
+  Focus,
+  ReactIcon
 } from "./components";
 
 const Main = styled.div`
@@ -144,7 +145,8 @@ export default function App() {
     LaptopWithText,
     OpenInNewTab,
     NotAllowed,
-    Focus
+    Focus,
+    ReactIcon
   ];
 
   return (
