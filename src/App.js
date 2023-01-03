@@ -31,22 +31,55 @@ import {
   LaptopWithText,
   Building,
   NotAllowed,
+  CreditCard,
+  DiceOne,
+  DiceTwo,
+  DiceThree,
+  DiceFour,
+  DiceFive,
+  DiceSix,
+  OpenInNewTab,
+  WindowsIcon,
+  PlusSign,
+  MinusSign,
+  MultiplySign,
+  DivideSign,
   Gmail,
-  Instagram,
+  Instagram
 } from "./components";
 
-const Container = styled.div`
-  position: relative;
-  display: flex;
-  column-gap: 20px;
-  row-gap: 20px;
+const Main = styled.div`
+  background: #acb3bf;
   width: 100vw;
-  padding: 10px;
-  margin: 5px;
+  height: 100vh;
   box-sizing: border-box;
-  overflow: hidden;
-  flex-wrap: wrap;
-  background-color: #acb3bf;
+`
+
+const Header = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e66465, #9198e5);
+  width: 100vw;
+  height: 50px;
+  color: white;
+`
+
+const Container = styled.div`
+  // position: relative;
+  // display: flex;
+  // align-items: center;
+  // column-gap: 20px;
+  // row-gap: 20px;
+  // width: calc(100vw - 20px);
+  // padding: 10px;
+  // margin: 5px;
+  // flex-wrap: wrap;
+  
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin: 10px 20px;
 `;
 
 const IconContainer = styled.div`
@@ -62,15 +95,13 @@ const IconContainer = styled.div`
 
 export default function App() {
   const components = [
-    Circle,
-    SemiCircle,
-    HorizontalLine,
-    VerticalLine,
-    SolidTriangle,
-    Square,
-    Reactange,
-    CrossSign,
-    Star,
+    // dark icons
+    DiceOne,
+    DiceTwo,
+    DiceThree,
+    DiceFour,
+    DiceFive,
+    DiceSix,
     AppsIcon,
     SunSolid,
     SunSolidHorizon,
@@ -78,11 +109,28 @@ export default function App() {
     ArrowToRight,
     ArrowToDown,
     ArrowToUp,
+    FileIcon,
+    Folder,
+    Building,
+    CreditCard,
+    WindowsIcon,
+    SolidTriangle,
+    PlusSign,
+    MinusSign,
+    MultiplySign,
+    DivideSign,
+    // light icons
+    Circle,
+    SemiCircle,
+    HorizontalLine,
+    VerticalLine,
+    Square,
+    Reactange,
+    CrossSign,
+    Star,
     TripleDotsHorizontal,
     TripleDotsVertical,
     MenuIconHorizontal,
-    FileIcon,
-    Folder,
     Profile,
     BatteryEmpty,
     BatteryHalfEmpty,
@@ -90,6 +138,8 @@ export default function App() {
     Mobile,
     Laptop,
     LaptopWithText,
+    NotAllowed,
+    OpenInNewTab,
     Building,
     NotAllowed,
     Gmail,
@@ -97,6 +147,8 @@ export default function App() {
   ];
 
   return (
+    <Main>
+    <Header>CSS ICONS</Header>
     <Container>
       {components.map((Component, i) => {
         return (
@@ -106,5 +158,6 @@ export default function App() {
         );
       })}
     </Container>
+    </Main>
   );
 }

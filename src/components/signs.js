@@ -448,64 +448,155 @@ export const NotAllowed = styled.div`
   }
 `;
 
-export const Gmail = styled.div`
+export const CreditCard = styled.div`
   width: 50px;
-  height: 50px;
+  height: 40px;
+  border-radius: 3px;
   background: black;
-  border-radius: 5px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 6px;
-    width: 32px;
-    height: 32px;
-    border-left: 3px solid white;
-    border-right: 3px solid white;
+    top: 10px;
+    width: 50px;
+    height: 5px;
+    background: white;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: -2.5px;
-    left: 12.5px;
-    width: 22px;
-    height: 22px;
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
-    transform: rotate(-45deg);
-  }
-`;
-
-export const Instagram = styled.div`
-  width: 50px;
-  height: 50px;
-  background: black;
-  border-radius: 12px;
-  border: 2px solid white;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 20px;
-    height: 20px;
-    border: 3px solid white;
-    border-radius: 50%;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 5px;
+    bottom: 5px;
     right: 5px;
     width: 0px;
     height: 0px;
     border: 4px solid white;
+    border-radius: 2px;
+  }
+`;
+
+export const OpenInNewTab = styled.div`
+  width: 15px;
+  height: 10px;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 2px;
+    
+  &::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    border: 1px solid black;
+    top: -7px;
+    left: 6px;
+    background: white;
+    border-radius: 2px;
+  }
+`
+
+export const WindowsIcon = styled.div`
+  width: 50px;
+  height: 50px;
+  background: black;
+  position: relative;
+  
+  &::before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: white;
+    position: absolute;
+    top: 23px;
+  }
+  
+  &::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: white;
+    position: absolute;
+    top: 23px;
+    transform: rotate(90deg);
+  }
+`
+
+export const PlusSign = styled.div`
+  width: 7px;
+  height: 40px;
+  background: black;
+  position: relative;
+  border-radius: 2px;
+  
+  &::before{
+    content: '';
+    width: 7px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    background: black;
+    transform: rotate(270deg);
+    border-radius: 2px;
+  }
+`
+
+export const MinusSign = styled.div`
+  width: 7px;
+  height: 40px;
+  background: black;
+  position: relative;
+  border-radius: 2px;
+  transform: rotate(270deg);
+`
+
+export const MultiplySign = styled.div`
+  width: 7px;
+  height: 40px;
+  background: black;
+  position: relative;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  
+  &::before{
+    content: '';
+    width: 7px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    background: black;
+    transform: rotate(270deg);
+    border-radius: 2px;
+  }
+`
+
+export const DivideSign = styled.div`
+  width: 7px;
+  height: 40px;
+  background: black;
+  position: relative;
+  border-radius: 2px;
+  transform: rotate(270deg);
+  
+  &::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 16px;
+    left: 11px;
     border-radius: 50%;
+    border: 5px solid black;
+  }
+  
+  &::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 16px;
+    left: -13px;
+    border-radius: 50%;
+    border: 5px solid black;
   }
 `;
