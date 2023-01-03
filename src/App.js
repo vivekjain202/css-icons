@@ -43,7 +43,9 @@ import {
   PlusSign,
   MinusSign,
   MultiplySign,
-  DivideSign
+  DivideSign,
+  Gmail,
+  Instagram
 } from "./components";
 
 const Main = styled.div`
@@ -138,6 +140,10 @@ export default function App() {
     LaptopWithText,
     NotAllowed,
     OpenInNewTab,
+    Building,
+    NotAllowed,
+    Gmail,
+    Instagram,
   ];
 
   return (
