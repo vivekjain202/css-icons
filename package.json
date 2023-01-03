@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
+  "homepage": "https://vivekjain202.github.io/CSS-ICONS",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
