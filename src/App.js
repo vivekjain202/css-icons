@@ -45,7 +45,8 @@ import {
   MultiplySign,
   DivideSign,
   Gmail,
-  Instagram
+  Instagram,
+  Focus
 } from "./components";
 
 const Main = styled.div`
@@ -119,7 +120,13 @@ export default function App() {
     MinusSign,
     MultiplySign,
     DivideSign,
+    Gmail,
+    Instagram,
+
     // light icons
+    BatteryFull,
+    BatteryHalfEmpty,
+    BatteryEmpty,
     Circle,
     SemiCircle,
     HorizontalLine,
@@ -132,18 +139,12 @@ export default function App() {
     TripleDotsVertical,
     MenuIconHorizontal,
     Profile,
-    BatteryEmpty,
-    BatteryHalfEmpty,
-    BatteryFull,
     Mobile,
     Laptop,
     LaptopWithText,
-    NotAllowed,
     OpenInNewTab,
-    Building,
     NotAllowed,
-    Gmail,
-    Instagram,
+    Focus
   ];
 
   return (
