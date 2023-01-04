@@ -47,7 +47,8 @@ import {
   Gmail,
   Instagram,
   Focus,
-  ReactIcon
+  ReactIcon,
+  BriefCase
 } from "./components";
 
 const Main = styled.div`
@@ -146,7 +147,8 @@ export default function App() {
     OpenInNewTab,
     NotAllowed,
     Focus,
-    ReactIcon
+    ReactIcon,
+    BriefCase
   ];
 
   return (
