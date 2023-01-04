@@ -48,14 +48,16 @@ import {
   Instagram,
   Focus,
   ReactIcon,
-  BriefCase
+  BriefCase,
+  Globe
 } from "./components";
 
 const Main = styled.div`
   background: #acb3bf;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   box-sizing: border-box;
+  padding-bottom: 10px;
 `
 
 const Header = styled.div`
@@ -69,16 +71,6 @@ const Header = styled.div`
 `
 
 const Container = styled.div`
-  // position: relative;
-  // display: flex;
-  // align-items: center;
-  // column-gap: 20px;
-  // row-gap: 20px;
-  // width: calc(100vw - 20px);
-  // padding: 10px;
-  // margin: 5px;
-  // flex-wrap: wrap;
-  
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -124,6 +116,7 @@ export default function App() {
     DivideSign,
     Gmail,
     Instagram,
+    Globe,
 
     // light icons
     BatteryFull,
