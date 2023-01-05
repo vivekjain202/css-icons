@@ -49,7 +49,8 @@ import {
   Focus,
   ReactIcon,
   BriefCase,
-  Globe
+  Globe,
+  Moon
 } from "./components";
 
 const Main = styled.div`
@@ -117,7 +118,8 @@ export default function App() {
     Gmail,
     Instagram,
     Globe,
-
+    Moon,
+    
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
