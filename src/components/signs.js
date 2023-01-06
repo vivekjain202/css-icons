@@ -811,3 +811,53 @@ export const Moon = styled.div`
     top: -2px;
   }
 `
+
+export const Correct = styled.div`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background : black;
+  position: relative;
+
+  &:before{
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 25px;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    bottom: 20px;
+    left: 10px;
+    transform: rotate(-45deg)
+  }
+`
+
+export const Wrong = styled.div`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background : black;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 34px;
+    width: 5px;
+    top: 17%;
+    left: 45%;
+    background: white;
+    transform: rotate(-45deg)
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 34px;
+    width: 5px;
+    top: 17%;
+    right: 45%;
+    background: white;
+    transform: rotate(45deg)
+  }
+`
