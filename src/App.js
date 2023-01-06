@@ -50,7 +50,9 @@ import {
   ReactIcon,
   BriefCase,
   Globe,
-  Moon
+  Moon,
+  Correct,
+  Wrong
 } from "./components";
 
 const Main = styled.div`
@@ -119,6 +121,8 @@ export default function App() {
     Instagram,
     Globe,
     Moon,
+    Correct,
+    Wrong,
     
     // light icons
     BatteryFull,
