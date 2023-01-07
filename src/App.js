@@ -52,7 +52,12 @@ import {
   Globe,
   Moon,
   Correct,
-  Wrong
+  Wrong,
+  SearchIcon,
+  ZoomInIcon,
+  ZoomOutIcon,
+  USB,
+  Eye
 } from "./components";
 
 const Main = styled.div`
@@ -60,7 +65,7 @@ const Main = styled.div`
   min-width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
 `
 
 const Header = styled.div`
@@ -90,6 +95,26 @@ const IconContainer = styled.div`
   border-radius: 10px;
   background: white;
 `;
+
+const Footer = styled.div`
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, #e66465, #9198e5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const UnStyledLink = styled.a`
+  margin: 0 7px;
+`
+
+const LargeFont = styled.span`
+  display: inline-block;
+  font-size: 25px;
+  margin: 0 10px;
+`
 
 export default function App() {
   const components = [
@@ -123,7 +148,11 @@ export default function App() {
     Moon,
     Correct,
     Wrong,
-    
+    SearchIcon,
+    ZoomInIcon,
+    ZoomOutIcon,
+    USB,
+    Eye,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
@@ -162,6 +191,7 @@ export default function App() {
         );
       })}
     </Container>
+    <Footer>Made with ❤️ by <UnStyledLink href='https://github.com/vivekjain202' traget='_blank'>Vivek Jain</UnStyledLink> from <LargeFont>🇮🇳</LargeFont></Footer>
     </Main>
   );
 }
