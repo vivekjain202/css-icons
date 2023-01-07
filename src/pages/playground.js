@@ -120,7 +120,7 @@ export const PlayGround = () => {
             <LeftSection>
                 {Object.entries(List).map(([key, name])=> {
                     return (
-                        <StyledLink key={key} to={`/playground/${key}`} activeClassName='active'><LinkText title={name}>{name}</LinkText></StyledLink>
+                        <StyledLink key={key} to={`/css-icons/playground/${key}`} activeClassName='active'><LinkText title={name}>{name}</LinkText></StyledLink>
                     )
                 })}
             </LeftSection>

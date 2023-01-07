@@ -11,10 +11,8 @@ export default function App() {
       <Main>
       <Header />
       <Routes>
-        <Route path='/css-icons' errorElement={<div>404 Not found</div>}>
-          <Route path='/' element={<Home />}/>
-          <Route path='/playground/:iconName?' element={<PlayGround />} />
-        </Route>
+          <Route path='/css-icons' element={<Home />}/>
+          <Route path='/css-icons/playground/:iconName?' element={<PlayGround />} />
       </Routes>
       <Footer>Made with ❤️ by <UnStyledLink href='https://github.com/vivekjain202' traget='_blank'>Vivek Jain</UnStyledLink> from <LargeFont>🇮🇳</LargeFont></Footer>
       </Main>
