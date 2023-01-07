@@ -11,7 +11,7 @@ export default function App() {
       <Main>
       <Header />
       <Routes>
-        <Route to='/css-icons' errorElement={<div>404 Not found</div>}>
+        <Route path='/css-icons' errorElement={<div>404 Not found</div>}>
           <Route path='/' element={<Home />}/>
           <Route path='/playground/:iconName?' element={<PlayGround />} />
         </Route>
