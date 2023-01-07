@@ -58,7 +58,9 @@ import {
   ZoomOutIcon,
   USB,
   Eye,
-  Image
+  Image,
+  Lock,
+  LockOpen
 } from "./components";
 
 const Main = styled.div`
@@ -155,6 +157,8 @@ export default function App() {
     USB,
     Eye,
     Image,
+    Lock,
+    LockOpen,
     
     // light icons
     BatteryFull,
