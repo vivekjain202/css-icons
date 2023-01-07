@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const SolidTriangle = styled.div`
   width: 0px;
   height: 0px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
   border-bottom: 50px solid black;
 `;
 

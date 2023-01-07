@@ -6,8 +6,14 @@
   "homepage": "https://vivekjain202.github.io/css-icons",
   "main": "src/index.js",
   "dependencies": {
+    "@codemirror/lang-css": "^6.0.1",
+    "@codemirror/lang-html": "^6.4.0",
+    "@codemirror/lang-javascript": "^6.1.2",
+    "@uiw/codemirror-theme-vscode": "^4.19.5",
+    "@uiw/react-codemirror": "^4.19.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-router-dom": "^6.6.1",
     "react-scripts": "4.0.0",
     "styled-components": "5.3.6"
   },
