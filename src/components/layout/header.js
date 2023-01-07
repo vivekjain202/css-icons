@@ -45,10 +45,10 @@ export const Header = () => {
     const location = useLocation()
     return (
         <HeaderContainer>
-            <HeaderLeftBlock><StyledLink to={'/css-icons'}>CSS ICONS</StyledLink></HeaderLeftBlock>
+            <HeaderLeftBlock><StyledLink to={'/'}>CSS ICONS</StyledLink></HeaderLeftBlock>
             <HeaderRightBlock>
-                <StyledLink to={'/css-icons'} activeClassName='active'>HOME</StyledLink>
-                <StyledLink to={'/css-icons/playground'} activeClassName='active'>PLAYGROUND</StyledLink>
+                <StyledLink to={'/'} activeClassName='active'>HOME</StyledLink>
+                <StyledLink to={'/playground'} activeClassName='active'>PLAYGROUND</StyledLink>
             </HeaderRightBlock>
         </HeaderContainer>
     )
