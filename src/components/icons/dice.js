@@ -35,8 +35,8 @@ export const DiceTwo = styled.div`
     height: 5px;
     background: white;
     border-radius: 50%;
-    top: 5px;
-    left: 5px;
+    top: 4px;
+    left: 4px;
   }
   
   &::after {
@@ -46,8 +46,8 @@ export const DiceTwo = styled.div`
     height: 5px;
     background: white;
     border-radius: 50%;
-    top: 20px;
-    left: 20px;
+    top: 19px;
+    left: 19px;
   }
 `
 
@@ -65,8 +65,8 @@ export const DiceThree = styled.div`
     position: absolute;
     width: 0px;
     height: 0px;
-    top: 5px;
-    left: 5px;
+    top: 4px;
+    left: 4px;
     background: white;
     border: 2.5px solid white;
     border-radius: 50%;

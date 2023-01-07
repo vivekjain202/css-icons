@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const SearchIcon = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   border: 3px solid black;
   position: relative;

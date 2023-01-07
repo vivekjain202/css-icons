@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ArrowToLeft = styled.div`
-  width: 30px;
-  height: 2px;
+  width: 32px;
+  height: 4px;
   background: black;
   border-radius: 2px;
   border: 1px solid black;

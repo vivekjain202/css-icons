@@ -16,6 +16,6 @@ export const Profile = styled.div`
     border-bottom: 0px;
     border-radius: 10px 10px 0px 0px;
     top: 20px;
-    left: -5.5px;
+    left: -6.5px;
   }
 `;

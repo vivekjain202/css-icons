@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const BatteryEmpty = styled.div`
-  width: 25px;
-  height: 15px;
+  width: 27px;
+  height: 17px;
   border: 1px solid black;
   border-radius: 0px 2px 2px 0px;
   position: relative;
@@ -20,8 +20,8 @@ export const BatteryEmpty = styled.div`
 `;
 
 export const BatteryHalfEmpty = styled.div`
-  width: 25px;
-  height: 15px;
+  width: 27px;
+  height: 17px;
   border: 1px solid black;
   border-radius: 0px 2px 2px 0px;
   position: relative;
@@ -49,8 +49,8 @@ export const BatteryHalfEmpty = styled.div`
 `;
 
 export const BatteryFull = styled.div`
-  width: 25px;
-  height: 15px;
+  width: 27px;
+  height: 17px;
   border: 1px solid black;
   border-radius: 0px 2px 2px 0px;
   position: relative;

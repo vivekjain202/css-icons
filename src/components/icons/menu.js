@@ -13,7 +13,7 @@ export const MenuIconHorizontal = styled.div`
     width: 20px;
     height: 1px;
     background: black;
-    top: 7px;
+    top: 5px;
     border-bottom: 1px solid black;
   }
 `;

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const USB = styled.div`
-  width: 25px;
-  height: 30px;
+  width: 27px;
+  height: 32px;
   border-radius: 0px 0px 3px 3px;
   border: 1px solid black;
   background: black;

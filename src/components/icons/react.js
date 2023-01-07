@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ReactIcon = styled.div`
-  width: 15px;
-  height: 40px;
+  width: 17px;
+  height: 42px;
   border-radius: 50%;
   border: 1px solid black;
   transform: rotate(30deg);

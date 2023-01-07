@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ZoomInIcon = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   border: 3px solid black;
   position: relative;
@@ -30,8 +30,8 @@ export const ZoomInIcon = styled.div`
 `
 
 export const ZoomOutIcon = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   border: 3px solid black;
   position: relative;

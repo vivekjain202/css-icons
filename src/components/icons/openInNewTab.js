@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const OpenInNewTab = styled.div`
-  width: 15px;
-  height: 10px;
+  width: 17px;
+  height: 12px;
   border: 1px solid black;
   position: relative;
   border-radius: 2px;

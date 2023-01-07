@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Focus = styled.div`
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 2px solid black;
   position: relative;

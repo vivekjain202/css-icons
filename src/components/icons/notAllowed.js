@@ -10,8 +10,8 @@ export const NotAllowed = styled.div`
   &::after {
     content: "";
     position: absolute;
-    bottom: 0px;
-    right: 10px;
+    bottom: -1px;
+    right: 8px;
     width: 1px;
     height: 20px;
     background: black;

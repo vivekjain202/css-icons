@@ -15,7 +15,7 @@ export const Mobile = styled.div`
     border-radius: 2px;
     background: black;
     top: 2.5px;
-    left: 6.5px;
+    left: 5px;
   }
 
   &::after {
@@ -26,6 +26,6 @@ export const Mobile = styled.div`
     border-radius: 50%;
     border: 1px solid black;
     bottom: 2px;
-    left: 8px;
+    left: 7px;
   }
 `;

@@ -16,13 +16,13 @@ export const Laptop = styled.div`
     border-radius: 50%;
     background: black;
     top: 3px;
-    left: 24px;
+    left: 21px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    width: 70px;
+    width: 62px;
     height: 10px;
     border: 2px solid black;
     border-radius: 0px 0px 5px 5px;
@@ -42,7 +42,7 @@ export const LaptopWithText = styled.div`
   &::before {
     content: "";
     position: absolute;
-    width: 40px;
+    width: 32px;
     height: 10px;
     border-radius: 1px;
     border-top: 4px double black;
@@ -54,7 +54,7 @@ export const LaptopWithText = styled.div`
   &::after {
     content: "";
     position: absolute;
-    width: 70px;
+    width: 62px;
     height: 10px;
     border: 2px solid black;
     border-radius: 0px 0px 5px 5px;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BriefCase = styled.div`
-  width: 30px;
+  width: 32px;
   height: 30px;
   border: 1px solid black;
   border-radius: 3px;

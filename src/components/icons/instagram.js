@@ -11,10 +11,10 @@ export const Instagram = styled.div`
   &::before {
     content: "";
     position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 20px;
-    height: 20px;
+    top: 11px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
     border: 3px solid white;
     border-radius: 50%;
   }
