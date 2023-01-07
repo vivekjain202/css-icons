@@ -969,3 +969,23 @@ export const USB = styled.div`
     left: 7.5px;
   }
 `
+
+export const Eye = styled.div`
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+  position: relative;
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: black;
+    top : 8px;
+    left: 18px;
+  }
+`

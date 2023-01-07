@@ -56,7 +56,8 @@ import {
   SearchIcon,
   ZoomInIcon,
   ZoomOutIcon,
-  USB
+  USB,
+  Eye
 } from "./components";
 
 const Main = styled.div`
@@ -131,6 +132,7 @@ export default function App() {
     ZoomInIcon,
     ZoomOutIcon,
     USB,
+    Eye,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
