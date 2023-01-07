@@ -52,7 +52,10 @@ import {
   Globe,
   Moon,
   Correct,
-  Wrong
+  Wrong,
+  SearchIcon,
+  ZoomInIcon,
+  ZoomOutIcon
 } from "./components";
 
 const Main = styled.div`
@@ -123,7 +126,9 @@ export default function App() {
     Moon,
     Correct,
     Wrong,
-    
+    SearchIcon,
+    ZoomInIcon,
+    ZoomOutIcon,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
