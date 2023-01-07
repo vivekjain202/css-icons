@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ZoomInIcon = styled.div`
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 3px solid black;
   position: relative;
@@ -11,7 +11,7 @@ export const ZoomInIcon = styled.div`
     content: '';
     position: absolute;
     width: 3px;
-    height: 12px;
+    height: 14px;
     background: black;
     bottom: -9px;
     right: -5px;
@@ -22,16 +22,16 @@ export const ZoomInIcon = styled.div`
     content: '+';
     font-size: 22px;
     position: absolute;
-    top: -4px;
-    left: 4px;
+    top: -3px;
+    left: 6px;
     color: black;
     font-weight: bolder;
   }
 `
 
 export const ZoomOutIcon = styled.div`
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 3px solid black;
   position: relative;
@@ -40,7 +40,7 @@ export const ZoomOutIcon = styled.div`
     content: '';
     position: absolute;
     width: 3px;
-    height: 12px;
+    height: 14px;
     background: black;
     bottom: -9px;
     right: -5px;
@@ -51,8 +51,8 @@ export const ZoomOutIcon = styled.div`
     content: '-';
     font-size: 22px;
     position: absolute;
-    top: -4px;
-    left: 6px;
+    top: -3px;
+    left: 8px;
     color: black;
     font-weight: bolder;
   }

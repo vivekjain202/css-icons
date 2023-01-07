@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const NotAllowed = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: 1px solid black;
   border-radius: 50%;
   position: relative;
@@ -11,9 +11,9 @@ export const NotAllowed = styled.div`
     content: "";
     position: absolute;
     bottom: -1px;
-    right: 8px;
+    right: 13px;
     width: 1px;
-    height: 20px;
+    height: 30px;
     background: black;
     transform: rotate(-135deg);
   }

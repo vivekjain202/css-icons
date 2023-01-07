@@ -7,9 +7,9 @@ export const SunSolid = styled.div`
   background: black;
   border: 1px solid black;
 
-  box-shadow: 0 -25px 0 -6px black, 17px -17px 0 -6px black, 25px 0 0 -6px black,
-    17px 17px 0 -6px black, 0 25px 0 -6px black, -17px 17px 0 -6px black,
-    -25px 0 0 -6px black, -17px -17px 0 -6px black;
+  box-shadow: 0 -20px 0 -6px black, 13px -13px 0 -6px black, 20px 0 0 -6px black,
+    13px 13px 0 -6px black, 0 20px 0 -6px black, -13px 13px 0 -6px black,
+    -20px 0 0 -6px black, -13px -13px 0 -6px black;
 `;
 
 export const SunSolidHorizon = styled.div`
@@ -20,8 +20,8 @@ export const SunSolidHorizon = styled.div`
   border: 1px solid black;
   position: relative;
 
-  box-shadow: 0 -25px 0 -6px black, 17px -17px 0 -6px black, 25px 0 0 -6px black,
-    -25px 0 0 -6px black, -17px -17px 0 -6px black;
+  box-shadow: 0 -20px 0 -6px black, 13px -13px 0 -6px black, 20px 0 0 -6px black,
+    -20px 0 0 -6px black, -13px -13px 0 -6px black;
 
   &::after {
     content: "";

@@ -7,7 +7,7 @@ export const AppsIcon = styled.div`
   background: black;
   border: 1px solid black;
 
-  box-shadow: 0 -15px 0 0 black, 15px -15px 0 0 black, 15px 0 0 0 black,
-    15px 15px 0 0 black, 0 15px 0 0 black, -15px 15px 0 0 black,
-    -15px 0 0 0 black, -15px -15px 0 0 black;
+  box-shadow: 0 -13px 0 0 black, 13px -13px 0 0 black, 13px 0 0 0 black,
+    13px 13px 0 0 black, 0 13px 0 0 black, -13px 13px 0 0 black,
+    -13px 0 0 0 black, -13px -13px 0 0 black;
 `;
