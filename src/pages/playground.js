@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Editor from "../editor/editor";
-import { ComponentsMap } from "../components";
+import { ComponentsMap, List } from "../components";
 import { useParams } from "react-router-dom";
+import { NavLink } from 'react-router-dom'
 
 const Container = styled.div`
     display: flex;
-    min-height: calc(100vh - 120px);
+    height: calc(100vh - 120px);
     margin: 10px 20px;
     width: 100%;
 `
@@ -15,7 +16,9 @@ const LeftSection = styled.div`
     width: 20%;
     border-right: 1px dotted black;
     min-height: 100%;
+    max-height: 100%;
     padding: 10px;
+    overflow-y: scroll;
 `
 
 const RightSection = styled.div`
@@ -43,8 +46,13 @@ const Stack = styled.div`
 
 const EditorHeader = styled.p`
     text-align: center;
-    height: 20px;
-    margin: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    color: ${props => props.color || 'white'};
+    background-color: ${props => props.background || 'black'};
 `
 
 const EditorContainer = styled.div`
@@ -67,6 +75,29 @@ export const StyledIframe = styled.iframe`
   width: 100%;
   height: calc(100% - 60px);
 `
+
+const StyledLink = styled(NavLink)`
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.85;
+    }
+
+    // &.${props => props.activeClassName} {
+    //     border-left: 1px solid white;
+    //     border-right: 1px solid white;
+    // }
+`
+
+const LinkText = styled.p`
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+`
+
 export const PlayGround = () => {
     const [html, setHtml] = useState('');
     const [css, setCss] = useState('');
@@ -86,12 +117,18 @@ export const PlayGround = () => {
     const ComponentPreview = ComponentsMap[iconName]
     return (
         <Container>
-            <LeftSection>Left</LeftSection>
+            <LeftSection>
+                {Object.entries(List).map(([key, name])=> {
+                    return (
+                        <StyledLink key={key} to={`/playground/${key}`} activeClassName='active'><LinkText title={name}>{name}</LinkText></StyledLink>
+                    )
+                })}
+            </LeftSection>
             <RightSection>
                 <RightSubSection>
                     <Stack>
                         <EditorContainer>
-                            <EditorHeader>HTML</EditorHeader>
+                            <EditorHeader color='white' background='black'>HTML</EditorHeader>
                             <Editor 
                                 placeholder='Enter your HTML here'
                                 language='xml'
@@ -101,7 +138,7 @@ export const PlayGround = () => {
                             />
                         </EditorContainer>
                         <EditorContainer>
-                            <EditorHeader>CSS</EditorHeader>
+                            <EditorHeader color='white' background='black'>CSS</EditorHeader>
                             <Editor 
                                 placeholder='Enter your CSS here'
                                 language='css'

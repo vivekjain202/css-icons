@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from "styled-components";
+import { useLocation } from "react-router-dom";
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -24,7 +25,7 @@ const HeaderRightBlock = styled.div`
     margin-right: 30px;
 `
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
     margin: 5px 10px;
     text-decoration: none;
     color: white;
@@ -33,15 +34,21 @@ const StyledLink = styled(Link)`
     &:hover {
         opacity: 0.85;
     }
+
+    &.${props => props.activeClassName} {
+        border-bottom: 1px solid white;
+    }
 `
+const ActiveStyle = ({'borderBottom': '1px solid white'})
 
 export const Header = () => {
+    const location = useLocation()
     return (
         <HeaderContainer>
             <HeaderLeftBlock><StyledLink to={'/'}>CSS ICONS</StyledLink></HeaderLeftBlock>
             <HeaderRightBlock>
-                <StyledLink to={'/'}>HOME</StyledLink>
-                <StyledLink to={'/playground'}>PLAYGROUND</StyledLink>
+                <StyledLink to={'/'} activeClassName='active'>HOME</StyledLink>
+                <StyledLink to={'/playground'} activeClassName='active'>PLAYGROUND</StyledLink>
             </HeaderRightBlock>
         </HeaderContainer>
     )
