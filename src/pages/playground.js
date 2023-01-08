@@ -118,7 +118,7 @@ export const PlayGround = () => {
     return (
         <Container>
             <LeftSection>
-                {Object.entries(List).map(([key, name])=> {
+                {Object.entries(List).sort((a,b)=> a[0].localeCompare(b[0])).map(([key, name])=> {
                     return (
                         <StyledLink key={key} to={`/playground/${key}`} activeClassName='active'><LinkText title={name}>{name}</LinkText></StyledLink>
                     )
