@@ -58,7 +58,10 @@ import {
     Eye,
     Image,
     Lock,
-    LockOpen
+    LockOpen,
+    Dialpad,
+    Pokemon,
+    Calendar
   } from "./icons";
 
 export const ComponentsMap = {
@@ -100,6 +103,9 @@ export const ComponentsMap = {
     image: Image,
     lock: Lock,
     lock_open: LockOpen,
+    dialpad: Dialpad,
+    pokemon: Pokemon,
+    calendar: Calendar,
 
     // light icons
     battery_full: BatteryFull,
@@ -166,6 +172,9 @@ export const Components = [
     Image,
     Lock,
     LockOpen,
+    Dialpad,
+    Pokemon,
+    Calendar,
 
     // light icons
     BatteryFull,
@@ -231,6 +240,9 @@ export const Components = [
     image: 'Image',
     lock: 'Lock',
     lock_open: 'Lock Open',
+    dialpad: 'Dialpad',
+    pokemon: 'Pokemon',
+    calendar : 'Calendar',
 
     // light icons
     battery_full: 'Battery Full',
