@@ -255,5 +255,5 @@ export const Components = [
     not_allowed: 'Not Allowed',
     focus: 'Focus',
     react: 'React',
-    briefcase: 'BriefCase'
+    briefcase: 'Briefcase'
   }
