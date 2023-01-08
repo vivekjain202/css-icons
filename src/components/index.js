@@ -60,7 +60,8 @@ import {
     Lock,
     LockOpen,
     Dialpad,
-    Pokemon
+    Pokemon,
+    Calendar
   } from "./icons";
 
 export const ComponentsMap = {
@@ -103,6 +104,8 @@ export const ComponentsMap = {
     lock: Lock,
     lock_open: LockOpen,
     dialpad: Dialpad,
+    pokemon: Pokemon,
+    calendar: Calendar,
 
     // light icons
     battery_full: BatteryFull,
@@ -127,8 +130,7 @@ export const ComponentsMap = {
     not_allowed: NotAllowed,
     focus: Focus,
     react: ReactIcon,
-    briefcase: BriefCase,
-    pokemon: Pokemon
+    briefcase: BriefCase
 };
 
 export const Components = [
@@ -172,7 +174,8 @@ export const Components = [
     LockOpen,
     Dialpad,
     Pokemon,
-    
+    Calendar,
+
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
@@ -239,6 +242,7 @@ export const Components = [
     lock_open: 'Lock Open',
     dialpad: 'Dialpad',
     pokemon: 'Pokemon',
+    calendar : 'Calendar',
 
     // light icons
     battery_full: 'Battery Full',
