@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://vivekjain202.github.io/css-icons",
   "main": "src/index.js",
   "dependencies": {
     "@codemirror/lang-css": "^6.0.1",
