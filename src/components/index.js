@@ -207,7 +207,7 @@ export const Components = [
     arrow_to_right:'Arrow Right',
     arrow_to_down:'Arrow Down',
     arrow_to_up:'Arrow Up',
-    file: 'FileIcon',
+    file: 'File',
     folder: 'Folder',
     building: 'Building',
     credit_card: 'Credit Card',
@@ -246,7 +246,7 @@ export const Components = [
     star: 'Star',
     triple_dot_horizontal: 'Triple Dots Horizontal',
     triple_dot_vertical: 'Triple Dots Vertical',
-    menu_horizontal: 'Menu Icon Horizontal',
+    menu_horizontal: 'Menu Horizontal',
     prpfile: 'Profile',
     mobile: 'Mobile',
     laptop: 'Laptop',
@@ -255,5 +255,5 @@ export const Components = [
     not_allowed: 'Not Allowed',
     focus: 'Focus',
     react: 'React',
-    briefcase: 'BriefCase'
+    briefcase: 'Briefcase'
   }
