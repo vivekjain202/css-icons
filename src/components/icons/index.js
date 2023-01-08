@@ -46,3 +46,4 @@ export * from "./window";
 export * from "./wrong";
 export * from "./zoom";
 export * from "./dialpad"
+export * from "./pokemon"
