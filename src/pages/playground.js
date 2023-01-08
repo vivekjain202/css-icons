@@ -7,9 +7,9 @@ import { NavLink } from 'react-router-dom'
 
 const Container = styled.div`
     display: flex;
-    height: calc(100vh - 120px);
-    margin: 10px 20px;
+    height: calc(100vh - 100px);
     width: 100%;
+    padding: 10px;
 `
 
 const LeftSection = styled.div`
@@ -24,7 +24,6 @@ const LeftSection = styled.div`
 const RightSection = styled.div`
     flex: 1;
     min-height: 100%;
-    padding: 10px;
     display: flex;
     width: 80%;
 `
@@ -84,11 +83,6 @@ const StyledLink = styled(NavLink)`
     &:hover {
         opacity: 0.85;
     }
-
-    // &.${props => props.activeClassName} {
-    //     border-left: 1px solid white;
-    //     border-right: 1px solid white;
-    // }
 `
 
 const LinkText = styled.p`
