@@ -1,5 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { inject } from '@vercel/analytics';
+
+// to enable analytics
+inject();
 
 import App from "./App";
 
