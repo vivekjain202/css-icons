@@ -62,6 +62,7 @@ import {
     Dialpad,
     Pokemon,
     Calendar,
+    SettingsSlider,
     Mouse
   } from "./icons";
 
@@ -107,6 +108,7 @@ export const ComponentsMap = {
     dialpad: Dialpad,
     pokemon: Pokemon,
     calendar: Calendar,
+    settings_slider: SettingsSlider,
     mouse: Mouse,
     // light icons
     battery_full: BatteryFull,
@@ -176,6 +178,7 @@ export const Components = [
     Dialpad,
     Pokemon,
     Calendar,
+    SettingsSlider,
     Mouse,
 
     // light icons
@@ -245,6 +248,7 @@ export const Components = [
     dialpad: 'Dialpad',
     pokemon: 'Pokemon',
     calendar : 'Calendar',
+    settings_slider: 'Settings slider',
     mouse: 'Mouse',
     // light icons
     battery_full: 'Battery Full',
