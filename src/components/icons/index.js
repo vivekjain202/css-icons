@@ -47,4 +47,5 @@ export * from "./wrong";
 export * from "./zoom";
 export * from "./dialpad";
 export * from "./pokemon";
-export * from "./calendar"
+export * from "./calendar";
+export * from "./mouse";
