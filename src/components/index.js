@@ -67,7 +67,8 @@ import {
     Facebook,
     List,
     Marker,
-    Youtube
+    Youtube,
+    Home
   } from "./icons";
 
 export const ComponentsMap = {
@@ -118,6 +119,7 @@ export const ComponentsMap = {
     list: List,
     marker: Marker,
     youtube: Youtube,
+    home: Home,
     // light icons
     battery_full: BatteryFull,
     battery_half_empty:BatteryHalfEmpty,
@@ -192,6 +194,7 @@ export const Components = [
     List,
     Marker,
     Youtube,
+    Home,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
@@ -265,6 +268,7 @@ export const Components = [
     list: 'List',
     marker: 'Marker',
     youtube: 'Youtube',
+    home: 'Home',
     // light icons
     battery_full: 'Battery Full',
     battery_half_empty:'Battery Half Empty',
