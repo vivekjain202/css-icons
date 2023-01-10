@@ -63,7 +63,8 @@ import {
     Pokemon,
     Calendar,
     SettingsSlider,
-    Mouse
+    Mouse,
+    Facebook
   } from "./icons";
 
 export const ComponentsMap = {
@@ -93,6 +94,7 @@ export const ComponentsMap = {
     divide: DivideSign,
     gmail: Gmail,
     instagram: Instagram,
+    facebook: Facebook,
     globe: Globe,
     moon: Moon,
     correct: Correct,
@@ -163,6 +165,7 @@ export const Components = [
     DivideSign,
     Gmail,
     Instagram,
+    Facebook,
     Globe,
     Moon,
     Correct,
@@ -250,6 +253,7 @@ export const Components = [
     calendar : 'Calendar',
     settings_slider: 'Settings slider',
     mouse: 'Mouse',
+    facebook: 'Facebook',
     // light icons
     battery_full: 'Battery Full',
     battery_half_empty:'Battery Half Empty',
