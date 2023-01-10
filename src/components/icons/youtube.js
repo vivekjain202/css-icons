@@ -20,3 +20,7 @@ export const Youtube = styled.div`
         left: 19px;
     }
 `
+
+// Note :-
+// setting one side of border to 0px allows all the other side to take up
+// space and converged on that side where we made border 0 px;
