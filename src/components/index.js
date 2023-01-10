@@ -65,7 +65,8 @@ import {
     SettingsSlider,
     Mouse,
     Facebook,
-    List
+    List,
+    Marker
   } from "./icons";
 
 export const ComponentsMap = {
@@ -114,6 +115,8 @@ export const ComponentsMap = {
     settings_slider: SettingsSlider,
     mouse: Mouse,
     list: List,
+    marker: Marker,
+
     // light icons
     battery_full: BatteryFull,
     battery_half_empty:BatteryHalfEmpty,
@@ -186,6 +189,8 @@ export const Components = [
     SettingsSlider,
     Mouse,
     List,
+    Marker,
+
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
@@ -257,6 +262,7 @@ export const Components = [
     mouse: 'Mouse',
     facebook: 'Facebook',
     list: 'List',
+    marker: 'Marker',
     // light icons
     battery_full: 'Battery Full',
     battery_half_empty:'Battery Half Empty',
