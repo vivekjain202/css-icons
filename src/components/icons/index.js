@@ -53,3 +53,4 @@ export * from "./mouse";
 export * from "./facebook";
 export * from "./list";
 export * from "./marker";
+export * from "./youtube";
