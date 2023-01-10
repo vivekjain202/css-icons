@@ -64,7 +64,8 @@ import {
     Calendar,
     SettingsSlider,
     Mouse,
-    Facebook
+    Facebook,
+    List
   } from "./icons";
 
 export const ComponentsMap = {
@@ -112,6 +113,7 @@ export const ComponentsMap = {
     calendar: Calendar,
     settings_slider: SettingsSlider,
     mouse: Mouse,
+    list: List,
     // light icons
     battery_full: BatteryFull,
     battery_half_empty:BatteryHalfEmpty,
@@ -183,7 +185,7 @@ export const Components = [
     Calendar,
     SettingsSlider,
     Mouse,
-
+    List,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
@@ -210,7 +212,7 @@ export const Components = [
     BriefCase
   ];
 
-  export const List = {
+  export const ComponentsList = {
     dice_one: 'Dice One',
     dice_two:'Dice Two',
     dice_three:'Dice Three',
@@ -254,6 +256,7 @@ export const Components = [
     settings_slider: 'Settings slider',
     mouse: 'Mouse',
     facebook: 'Facebook',
+    list: 'List',
     // light icons
     battery_full: 'Battery Full',
     battery_half_empty:'Battery Half Empty',
