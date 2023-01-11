@@ -55,3 +55,4 @@ export * from "./list";
 export * from "./marker";
 export * from "./youtube";
 export * from "./home";
+export * from "./camera";

@@ -68,7 +68,8 @@ import {
     List,
     Marker,
     Youtube,
-    Home
+    Home,
+    Camera
   } from "./icons";
 
 export const ComponentsMap = {
@@ -120,6 +121,7 @@ export const ComponentsMap = {
     marker: Marker,
     youtube: Youtube,
     home: Home,
+    camera: Camera,
     // light icons
     battery_full: BatteryFull,
     battery_half_empty:BatteryHalfEmpty,
@@ -195,6 +197,7 @@ export const Components = [
     Marker,
     Youtube,
     Home,
+    Camera,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
@@ -269,6 +272,7 @@ export const Components = [
     marker: 'Marker',
     youtube: 'Youtube',
     home: 'Home',
+    camera: 'Camera',
     // light icons
     battery_full: 'Battery Full',
     battery_half_empty:'Battery Half Empty',
