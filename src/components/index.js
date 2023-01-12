@@ -70,7 +70,9 @@ import {
     Youtube,
     Home,
     Camera
-  } from "./icons";
+  } from "./single-element-icons";
+
+  import { TwitterBadge } from "./multi-element-icons/twitterBadge";
 
 export const ComponentsMap = {
     // dark icons
@@ -122,6 +124,7 @@ export const ComponentsMap = {
     youtube: Youtube,
     home: Home,
     camera: Camera,
+    twitter_badge: TwitterBadge,
     // light icons
     battery_full: BatteryFull,
     battery_half_empty:BatteryHalfEmpty,
@@ -198,6 +201,7 @@ export const Components = [
     Youtube,
     Home,
     Camera,
+    TwitterBadge,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
@@ -273,6 +277,7 @@ export const Components = [
     youtube: 'Youtube',
     home: 'Home',
     camera: 'Camera',
+    twitter_badge: "Twitter Badge",
     // light icons
     battery_full: 'Battery Full',
     battery_half_empty:'Battery Half Empty',
