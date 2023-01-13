@@ -69,7 +69,8 @@ import {
     Marker,
     Youtube,
     Home,
-    Camera
+    Camera,
+    Stats
   } from "./single-element-icons";
 
   import { TwitterBadge } from "./multi-element-icons/twitterBadge";
@@ -125,6 +126,7 @@ export const ComponentsMap = {
     home: Home,
     camera: Camera,
     twitter_badge: TwitterBadge,
+    stats: Stats,
     // light icons
     battery_full: BatteryFull,
     battery_half_empty:BatteryHalfEmpty,
@@ -202,6 +204,7 @@ export const Components = [
     Home,
     Camera,
     TwitterBadge,
+    Stats,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
@@ -278,6 +281,7 @@ export const Components = [
     home: 'Home',
     camera: 'Camera',
     twitter_badge: "Twitter Badge",
+    stats: 'Stats',
     // light icons
     battery_full: 'Battery Full',
     battery_half_empty:'Battery Half Empty',
