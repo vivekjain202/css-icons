@@ -204,11 +204,11 @@ export const Components = [
     Home,
     Camera,
     TwitterBadge,
-    Stats,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
     BatteryEmpty,
+    Stats,
     Circle,
     SemiCircle,
     HorizontalLine,
