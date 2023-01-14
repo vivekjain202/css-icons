@@ -57,3 +57,4 @@ export * from "./youtube";
 export * from "./home";
 export * from "./camera";
 export * from "./stats";
+export * from "./userAdd";

@@ -70,7 +70,8 @@ import {
     Youtube,
     Home,
     Camera,
-    Stats
+    Stats,
+    UserAdd
   } from "./single-element-icons";
 
   import { TwitterBadge } from "./multi-element-icons/twitterBadge";
@@ -150,7 +151,8 @@ export const ComponentsMap = {
     not_allowed: NotAllowed,
     focus: Focus,
     react: ReactIcon,
-    briefcase: BriefCase
+    briefcase: BriefCase,
+    userAdd: UserAdd
 };
 
 export const Components = [
@@ -209,6 +211,7 @@ export const Components = [
     BatteryHalfEmpty,
     BatteryEmpty,
     Stats,
+    UserAdd
     Circle,
     SemiCircle,
     HorizontalLine,
