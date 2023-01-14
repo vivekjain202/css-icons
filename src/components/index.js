@@ -211,7 +211,7 @@ export const Components = [
     BatteryHalfEmpty,
     BatteryEmpty,
     Stats,
-    UserAdd
+    UserAdd,
     Circle,
     SemiCircle,
     HorizontalLine,
@@ -285,6 +285,7 @@ export const Components = [
     camera: 'Camera',
     twitter_badge: "Twitter Badge",
     stats: 'Stats',
+    userAdd: 'User Add',
     // light icons
     battery_full: 'Battery Full',
     battery_half_empty:'Battery Half Empty',
