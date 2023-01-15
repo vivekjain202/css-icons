@@ -63,8 +63,19 @@ import {
     Pokemon,
     Calendar,
     SettingsSlider,
-    Mouse
-  } from "./icons";
+    Mouse,
+    Facebook,
+    List,
+    Marker,
+    Youtube,
+    Home,
+    Camera,
+    Stats,
+    UserAdd,
+    Pause
+  } from "./single-element-icons";
+
+  import { TwitterBadge } from "./multi-element-icons/twitterBadge";
 
 export const ComponentsMap = {
     // dark icons
@@ -93,6 +104,7 @@ export const ComponentsMap = {
     divide: DivideSign,
     gmail: Gmail,
     instagram: Instagram,
+    facebook: Facebook,
     globe: Globe,
     moon: Moon,
     correct: Correct,
@@ -110,6 +122,14 @@ export const ComponentsMap = {
     calendar: Calendar,
     settings_slider: SettingsSlider,
     mouse: Mouse,
+    list: List,
+    marker: Marker,
+    youtube: Youtube,
+    home: Home,
+    camera: Camera,
+    twitter_badge: TwitterBadge,
+    stats: Stats,
+    pause: Pause,
     // light icons
     battery_full: BatteryFull,
     battery_half_empty:BatteryHalfEmpty,
@@ -133,7 +153,8 @@ export const ComponentsMap = {
     not_allowed: NotAllowed,
     focus: Focus,
     react: ReactIcon,
-    briefcase: BriefCase
+    briefcase: BriefCase,
+    userAdd: UserAdd
 };
 
 export const Components = [
@@ -163,6 +184,7 @@ export const Components = [
     DivideSign,
     Gmail,
     Instagram,
+    Facebook,
     Globe,
     Moon,
     Correct,
@@ -180,11 +202,19 @@ export const Components = [
     Calendar,
     SettingsSlider,
     Mouse,
-
+    List,
+    Marker,
+    Youtube,
+    Home,
+    Camera,
+    TwitterBadge,
+    Pause,
     // light icons
     BatteryFull,
     BatteryHalfEmpty,
     BatteryEmpty,
+    Stats,
+    UserAdd,
     Circle,
     SemiCircle,
     HorizontalLine,
@@ -207,7 +237,7 @@ export const Components = [
     BriefCase
   ];
 
-  export const List = {
+  export const ComponentsList = {
     dice_one: 'Dice One',
     dice_two:'Dice Two',
     dice_three:'Dice Three',
@@ -250,6 +280,16 @@ export const Components = [
     calendar : 'Calendar',
     settings_slider: 'Settings slider',
     mouse: 'Mouse',
+    facebook: 'Facebook',
+    list: 'List',
+    marker: 'Marker',
+    youtube: 'Youtube',
+    home: 'Home',
+    camera: 'Camera',
+    twitter_badge: "Twitter Badge",
+    stats: 'Stats',
+    userAdd: 'User Add',
+    pause: 'Pause',
     // light icons
     battery_full: 'Battery Full',
     battery_half_empty:'Battery Half Empty',

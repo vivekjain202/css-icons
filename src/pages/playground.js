@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Editor from "../editor/editor";
-import { ComponentsMap, List } from "../components";
+import { ComponentsMap, ComponentsList } from "../components";
 import { useParams } from "react-router-dom";
 import { NavLink } from 'react-router-dom'
 
@@ -112,7 +112,7 @@ export const PlayGround = () => {
     return (
         <Container>
             <LeftSection>
-                {Object.entries(List).sort((a,b)=> a[0].localeCompare(b[0])).map(([key, name])=> {
+                {Object.entries(ComponentsList).sort((a,b)=> a[0].localeCompare(b[0])).map(([key, name])=> {
                     return (
                         <StyledLink key={key} to={`/playground/${key}`} activeClassName='active'><LinkText title={name}>{name}</LinkText></StyledLink>
                     )
