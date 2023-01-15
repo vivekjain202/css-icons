@@ -58,3 +58,4 @@ export * from "./home";
 export * from "./camera";
 export * from "./stats";
 export * from "./userAdd";
+export * from "./pause";
