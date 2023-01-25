@@ -4,6 +4,7 @@ import { Header } from "./components/layout/header"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home";
 import { PlayGround } from "./pages/playground";
+import { Solution } from "./pages/solution";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/playground/:iconName?' element={<PlayGround />} />
+          <Route path='/solution/:iconName?' element={<Solution />} />
       </Routes>
       <Footer>Made with ❤️ by <UnStyledLink href='https://github.com/vivekjain202' traget='_blank'>Vivek Jain</UnStyledLink> from <LargeFont>🇮🇳</LargeFont></Footer>
       </Main>

@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components"
+import { Link } from "react-router-dom"
 
 const Animate = keyframes`
   0%{
@@ -41,6 +42,8 @@ export const Container = styled.div`
     margin: 10px 20px;
 `;
 
+export const AnimationDiv = styled.div``
+
 export const IconContainer = styled.div`
     width: 150px;
     height: 150px;
@@ -50,15 +53,18 @@ export const IconContainer = styled.div`
     border: 1px solid black;
     border-radius: 10px;
     background: white;
+    position: relative;
 
     &:hover{
-    >div {
-        animation: ${Animate} 0.5s ease-in-out;
-    }
+      border-image: linear-gradient(to right, #e66465, #9198e5) 30;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 0px;
+      ${AnimationDiv}{
+          animation: ${Animate} 0.5s ease-in-out;
+      }
     }
 `;
-
-export const AnimationDiv = styled.div``
 
 export const Footer = styled.div`
   width: 100%;
@@ -78,4 +84,32 @@ export const LargeFont = styled.span`
   display: inline-block;
   font-size: 25px;
   margin: 0 10px;
+`
+
+export const ButtonHolder = styled.div`
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    height: 25px;
+    width: 100%;
+    background: linear-gradient(to right, #e66465, #9198e5);
+    gap: 2px;
+    border-top: 1px solid black;
+`
+
+export const StyledButton = styled.button`
+    flex: 1;
+    outline: 0px;
+    border: 0px;
+    background: transparent;
+    &:hover {
+      border: 1px solid white;
+      cursor: pointer;
+    }
+`
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: white;
+    outline: 0px;
 `
