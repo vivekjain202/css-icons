@@ -1,9 +1,13 @@
 import React, {useState} from "react";
+import { createPortal } from "react-dom";
 import { Container, IconContainer, AnimationDiv, ButtonHolder, StyledButton, StyledLink, NameHolder} from "../components/layout/layoutHelper"
 import { ComponentObject } from "../components";
+import { Solution } from "./solution";
 
 export const Home = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null)
+    const [showSolution, setShowSolution] = useState(false)
+    const [selectedComponent, setSelectedComponent] = useState(null)
     return (
         <Container>
           {ComponentObject.map((Component, i) => {
@@ -17,11 +21,12 @@ export const Home = () => {
                 </AnimationDiv>
                 {i === hoveredIndex && <ButtonHolder>
                   <StyledButton borderDirection={'left'}><StyledLink to={`/playground/${Component.id}`}>Practice</StyledLink></StyledButton>
-                  <StyledButton borderDirection={'right'}><StyledLink to={`/solution/${Component.id}`}>Solution</StyledLink></StyledButton>
+                  <StyledButton borderDirection={'right'} onClick={() => {setShowSolution(true); setSelectedComponent(Component)}}>Solution</StyledButton>
                   </ButtonHolder>}
               </IconContainer>
             );
           })}
+          {showSolution && createPortal(<Solution component={selectedComponent} onClick={() => {setShowSolution(false); setSelectedComponent(null)}}/>, document.body)}
         </Container>
     )
 }

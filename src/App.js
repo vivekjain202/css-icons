@@ -14,7 +14,6 @@ export default function App() {
       <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/playground/:iconName?' element={<PlayGround />} />
-          <Route path='/solution/:iconName?' element={<Solution />} />
       </Routes>
       <Footer>Made with ❤️ by <UnStyledLink href='https://github.com/vivekjain202' traget='_blank'>Vivek Jain</UnStyledLink> from <LargeFont>🇮🇳</LargeFont></Footer>
       </Main>

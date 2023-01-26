@@ -102,6 +102,7 @@ export const StyledButton = styled.button`
     outline: 0px;
     border: 0px;
     background: transparent;
+    color: white;
     &:hover {
       border: 1px solid white;
       cursor: pointer;
