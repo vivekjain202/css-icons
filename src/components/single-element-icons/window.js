@@ -28,7 +28,7 @@ export const WindowsIcon = styled.div`
 
 export const Windows = {
   name: 'Window',
-  id: 'window',
+  id: 'windows',
   component: WindowsIcon,
   html: `<div class='window'></div>`,
   css:`.window{

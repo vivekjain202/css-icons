@@ -33,7 +33,7 @@ export const CrossSignIcon = styled.div`
 
 export const CrossSign = {
   name: 'Cross Sign',
-  id: 'cross_sign',
+  id: 'cross',
   component: CrossSignIcon,
   html: `<div class='crossSign'></div>`,
   css: `

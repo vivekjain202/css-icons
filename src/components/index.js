@@ -144,7 +144,7 @@ const ComponentMapData = [
   ['triple_dot_horizontal',TripleDotsHorizontal],
   ['triple_dot_vertical', TripleDotsVertical],
   ['menu_horizontal', MenuIconHorizontal],
-  ['prpfile', Profile],
+  ['profile', Profile],
   ['mobile', Mobile],
   ['laptop', Laptop],
   ['laptop_with_text', LaptopWithText],
@@ -153,7 +153,7 @@ const ComponentMapData = [
   ['focus', Focus],
   ['react',React],
   ['briefcase',BriefCase],
-  ['userAdd',  UserAdd]
+  ['user_add',  UserAdd]
 ]
 
 export const ComponentMap = new Map(ComponentMapData)

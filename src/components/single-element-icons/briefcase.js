@@ -32,8 +32,8 @@ export const BriefCaseIcon = styled.div`
 `;
 
 export const BriefCase = {
-  name: 'BriefCase',
-  id: 'briefCase',
+  name: 'Briefcase',
+  id: 'briefcase',
   component: BriefCaseIcon,
   html: `<div class='briefcase'></div>`,
   css: `.briefcase{

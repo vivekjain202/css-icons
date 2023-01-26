@@ -32,7 +32,7 @@ export const SettingsSliderIcon = styled.div`
 
 export const SettingsSlider = {
     name:'Settings Slider',
-    id: 'setting_slider',
+    id: 'settings_slider',
     component: SettingsSliderIcon,
     html: `<div class='settingsSlider'></div>`,
     css: `

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Editor } from '../editor/editor'
 import js_beautify from "js-beautify";
@@ -24,8 +24,8 @@ const CloseButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    right: -10px;
-    top: -10px;
+    right: -7px;
+    top: -7px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -33,6 +33,7 @@ const CloseButton = styled.button`
     border: 1px solid black;
     cursor: pointer;
     background: white;
+    z-index: 1001;
 `
 
 const Container = styled.div`
@@ -40,6 +41,7 @@ const Container = styled.div`
     position: relative;
     flex: 1;
     box-shadow: 0px 0px 20px 9px #000000ba;
+    overflow: scroll;
 `
 const ContentContainer = styled.div`
     display: flex;
@@ -101,14 +103,35 @@ const EditorContainer = styled.div`
 //     width: 100%;
 // `
 
+const RealtiveDiv = styled.div`
+    display: flex;
+    flex: 1;
+    position: relative;
+`
+
 
 const Solution = (props) => {
     const PreviewComponent = props.component.component
-    const options = { indent_size: 2 }
-    console.log(js_beautify(props.component.html, options))
+    const options = { indent_size: 2 };
+
+    function handleEsc(event) {
+        console.log(event)
+        if(event.keyCode === 27 || event.code === 'escape' || event.key === 'Escape'){
+            props.onClick();
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('keyup', handleEsc)
+
+        return () => {
+            window.removeEventListener('keyup', handleEsc)
+        }
+    }, [])
     return <Modal>
+        <RealtiveDiv>
+        <CloseButton onClick={props.onClick}>X</CloseButton>
         <Container>
-            <CloseButton onClick={props.onClick}>X</CloseButton>
             <ContentContainer flex={2}>
                 <SubSection>
                     <EditorContainer>
@@ -120,7 +143,7 @@ const Solution = (props) => {
                     <EditorContainer>
                         <EditorHeader color='white' background='black'>CSS</EditorHeader>
                         <PreviewEditor minHeight='auto' language='css' displayName='CSS' value={js_beautify.css(props.component.css, options)} editable={false}/>
-                        </EditorContainer>
+                    </EditorContainer>
                 </SubSection>
             </ContentContainer>
             <ContentContainer>
@@ -128,6 +151,7 @@ const Solution = (props) => {
                 {/* <SubSection><StyledHeading>Notes:</StyledHeading><NotesDiv>Some notes</NotesDiv></SubSection> */}
             </ContentContainer>
         </Container>
+        </RealtiveDiv>
     </Modal>
 }
 
