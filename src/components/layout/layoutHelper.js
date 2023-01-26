@@ -96,6 +96,7 @@ export const ButtonHolder = styled.div`
     background: linear-gradient(to right, #e66465, #9198e5);
     gap: 2px;
     border-top: 1px solid black;
+    z-index: 1000;
 `
 
 export const StyledButton = styled.button`
@@ -127,6 +128,7 @@ export const NameHolder = styled.div`
     top: 0px;
     width: 100%;
     flex: 1;
+    z-index: 1000;
 `
 
 export const Stack = styled.div`
