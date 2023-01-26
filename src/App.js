@@ -4,6 +4,7 @@ import { Header } from "./components/layout/header"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home";
 import { PlayGround } from "./pages/playground";
+import { Solution } from "./pages/solution";
 
 export default function App() {
   return (

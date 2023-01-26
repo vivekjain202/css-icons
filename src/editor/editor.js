@@ -28,12 +28,14 @@ function Editor(props) {
         ]}
         onChange={onChange}
         theme={vscodeDark}
-        minHeight={'200px'}
+        minHeight={props.minHeight ? props.minHeight : '200px'}
         height={'100%'}
         width={'100%'}
         placeholder={props.placeholder}
+        editable={props.editable !== undefined ? props.editable : true}
         />
     </StyledMirror>
   );
 }
 export default Editor;
+export { Editor };
