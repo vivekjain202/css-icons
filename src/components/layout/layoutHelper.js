@@ -36,7 +36,8 @@ export const Header = styled.div`
 `
 export const Container = styled.div`
     display: grid;
-    min-height: calc(100vh - 120px);
+    height: calc(100vh - 120px);
+    overflow: scroll;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     margin: 10px 20px;

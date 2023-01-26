@@ -5,13 +5,15 @@ import { Editor } from '../editor/editor'
 const Modal = styled.div`
     width: 100%;
     height: 100%;
-    padding: 20%;
+    padding: 10% 20%;
     background: rgba(0,0,0,0.2);
     position: absolute;
     top: 0px;
     bottom: 0px;
     right: 0px;
     left: 0px;
+    display: flex;
+    flex: 1;
 `
 
 const CloseButton = styled.button`
@@ -28,11 +30,14 @@ const CloseButton = styled.button`
     outline: 1px solid white;
     border: 1px solid black;
     cursor: pointer;
+    background: white;
 `
 
 const Container = styled.div`
     display: flex;
     position: relative;
+    flex: 1;
+    box-shadow: 0px 0px 20px 9px grey;
 `
 const ContentContainer = styled.div`
     display: flex;
@@ -65,14 +70,18 @@ const EditorHeader = styled.p`
     background-color: ${props => props.background || 'black'};
 `
 
+const PreviewEditor = styled(Editor)`
+    min-height: auto;
+`
+
 const Solution = (props) => {
     const PreviewComponent = props.component.component
     return <Modal>
         <Container>
             <CloseButton onClick={props.onClick}>X</CloseButton>
             <ContentContainer>
-                <SubSection><EditorHeader color='white' background='black'>HTML</EditorHeader><Editor language='xml' displayName='HTML' editable={false} value={`<div></div>`}/></SubSection>
-                <SubSection><EditorHeader color='white' background='black'>CSS</EditorHeader><Editor language='css' displayName='CSS' value={`.xyz{some css}`}/></SubSection></ContentContainer>
+                <SubSection><EditorHeader color='white' background='black'>HTML</EditorHeader><PreviewEditor minHeight='auto' language='xml' displayName='HTML' editable={false} value={`<div></div>`}/></SubSection>
+                <SubSection><EditorHeader color='white' background='black'>CSS</EditorHeader><PreviewEditor minHeight='auto' language='css' displayName='CSS' value={`.xyz{some css}`}/></SubSection></ContentContainer>
             <ContentContainer>
                 <SubSection><PreviewComponent /></SubSection>
                 <SubSection><h1>Notes:</h1></SubSection>
