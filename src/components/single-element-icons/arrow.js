@@ -174,7 +174,7 @@ export const ArrowToUp = {
 
 export const ArrowToDown = {
   name: 'Arrow Down',
-  id: 'arrow_to_up',
+  id: 'arrow_to_down',
   component: ArrowToDownIcon,
   html: `<div class='icon'></div>`,
   css: `.icon{

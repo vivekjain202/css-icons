@@ -8,7 +8,7 @@ export const ReactangleIcon = styled.div`
 
 export const Reactangle = {
   name: 'Reactangle',
-  id: 'reactangle',
+  id: 'rectangle',
   component: ReactangleIcon,
   html: `<div class='rectangle'></div>`,
   css: `
