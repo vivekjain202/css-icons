@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Editor } from '../editor/editor'
+import js_beautify from "js-beautify";
 
 const Modal = styled.div`
     width: 100%;
@@ -43,10 +44,11 @@ const Container = styled.div`
 const ContentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: ${props => props.flex || 1};
     border: 1px solid black;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
 `
 
 const SubSection = styled.div`
@@ -58,6 +60,7 @@ const SubSection = styled.div`
     justify-content: center;
     align-items: center;
     background: white;
+    overflow: scroll;
 `
 const EditorHeader = styled.p`
     width: 100%;
@@ -73,6 +76,14 @@ const EditorHeader = styled.p`
 
 const PreviewEditor = styled(Editor)`
     min-height: auto;
+`
+
+const EditorContainer = styled.div`
+    flex: 1;
+    border: 1px solid black;
+    overflow: scroll;
+    width: 100%;
+    height: 50%;
 `
 
 // const NotesDiv = styled.div`
@@ -93,12 +104,25 @@ const PreviewEditor = styled(Editor)`
 
 const Solution = (props) => {
     const PreviewComponent = props.component.component
+    const options = { indent_size: 2 }
+    console.log(js_beautify(props.component.html, options))
     return <Modal>
         <Container>
             <CloseButton onClick={props.onClick}>X</CloseButton>
-            <ContentContainer>
-                <SubSection><EditorHeader color='white' background='black'>HTML</EditorHeader><PreviewEditor minHeight='auto' language='xml' displayName='HTML' editable={false} value={`<div></div>`}/></SubSection>
-                <SubSection><EditorHeader color='white' background='black'>CSS</EditorHeader><PreviewEditor minHeight='auto' language='css' displayName='CSS' value={`.xyz{some css}`}/></SubSection></ContentContainer>
+            <ContentContainer flex={2}>
+                <SubSection>
+                    <EditorContainer>
+                        <EditorHeader color='white' background='black'>HTML</EditorHeader>
+                        <PreviewEditor minHeight='auto' language='xml' displayName='HTML' editable={false} value={js_beautify.html(props.component.html, options)}/>
+                    </EditorContainer>
+                </SubSection>
+                <SubSection>
+                    <EditorContainer>
+                        <EditorHeader color='white' background='black'>CSS</EditorHeader>
+                        <PreviewEditor minHeight='auto' language='css' displayName='CSS' value={js_beautify.css(props.component.css, options)} editable={false}/>
+                        </EditorContainer>
+                </SubSection>
+            </ContentContainer>
             <ContentContainer>
                 <SubSection><PreviewComponent /></SubSection>
                 {/* <SubSection><StyledHeading>Notes:</StyledHeading><NotesDiv>Some notes</NotesDiv></SubSection> */}

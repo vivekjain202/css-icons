@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BriefCase = styled.div`
+export const BriefCaseIcon = styled.div`
   width: 32px;
   height: 30px;
   border: 1px solid black;
@@ -30,3 +30,40 @@ export const BriefCase = styled.div`
     left: 4px;
   }
 `;
+
+export const BriefCase = {
+  name: 'BriefCase',
+  id: 'briefCase',
+  component: BriefCaseIcon,
+  html: `<div class='briefcase'></div>`,
+  css: `.briefcase{
+    width: 32px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .briefcase:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 5px;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid black;
+    border-bottom: 0px;
+    left: 8px;
+    top: -6px;
+  }
+
+  .briefcase::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    top: 0px;
+    left: 4px;
+  }`
+}
