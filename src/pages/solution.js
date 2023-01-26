@@ -14,6 +14,7 @@ const Modal = styled.div`
     left: 0px;
     display: flex;
     flex: 1;
+    z-index: 1001;
 `
 
 const CloseButton = styled.button`
