@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import Editor from "../editor/editor";
-import { ComponentsMap, ComponentObject } from "../components";
+import { ComponentMap } from "../components";
 import { useParams,NavLink } from "react-router-dom";
 import { Solution } from "./solution";
 
@@ -129,11 +129,11 @@ export const PlayGround = () => {
         `)
     }, [html,css]);
 
-    const ComponentPreview = ComponentsMap[iconName]
+    const ComponentPreview = ComponentMap.get(iconName).component
     return (
         <Container>
             <LeftSection>
-                {[...ComponentObject].sort((a,b)=> a.name.localeCompare(b.name)).map((component)=> {
+                {[...ComponentMap.values()].sort((a,b)=> a.name.localeCompare(b.name)).map((component)=> {
                     return (
                         <StyledLink key={component.id} to={`/playground/${component.id}`} activeClassName='active' active={component.id === iconName}><LinkText title={component.name}>{component.name}</LinkText></StyledLink>
                     )
@@ -174,7 +174,7 @@ export const PlayGround = () => {
                             <EditorHeader>REFERENCE</EditorHeader>
                             <PreviewContainer>
                                 <ComponentPreview />
-                                <StyledButton onClick={() =>{setShowSolution(true);setSelectedComponent(ComponentObject.find(v => v.id === iconName))}}>Reveal Solution</StyledButton>
+                                <StyledButton onClick={() =>{setShowSolution(true);setSelectedComponent(ComponentMap.get(iconName))}}>Reveal Solution</StyledButton>
                             </PreviewContainer>
                         </EditorContainer>
                     </Stack>
