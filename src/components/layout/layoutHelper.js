@@ -113,3 +113,24 @@ export const StyledLink = styled(Link)`
     color: white;
     outline: 0px;
 `
+
+export const NameHolder = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #e66465, #9198e5);
+    color: white;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    flex: 1;
+`
+
+export const Stack = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+`

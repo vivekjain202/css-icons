@@ -32,8 +32,10 @@ function Editor(props) {
         height={'100%'}
         width={'100%'}
         placeholder={props.placeholder}
+        editable={props.editable ? props.editable : true}
         />
     </StyledMirror>
   );
 }
 export default Editor;
+export { Editor };

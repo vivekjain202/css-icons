@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Editor from "../editor/editor";
-import { ComponentsMap, ComponentsList } from "../components";
+import { ComponentsMap, ComponentObject } from "../components";
 import { useParams } from "react-router-dom";
 import { NavLink } from 'react-router-dom'
 
@@ -17,7 +17,6 @@ const LeftSection = styled.div`
     border-right: 1px dotted black;
     min-height: 100%;
     max-height: 100%;
-    padding: 10px;
     overflow-y: scroll;
 `
 
@@ -76,10 +75,14 @@ export const StyledIframe = styled.iframe`
 `
 
 const StyledLink = styled(NavLink)`
+    display: flex;
     width: 100%;
     text-decoration: none;
     cursor: pointer;
-
+    background: ${props => props.active ? 'linear-gradient(to right, #e66465, #9198e5)': ''};
+    color: ${props => props.active ? 'white': 'black'};
+    padding-left: 10px;
+    margin-right: 10px;
     &:hover {
         opacity: 0.85;
     }
@@ -112,9 +115,9 @@ export const PlayGround = () => {
     return (
         <Container>
             <LeftSection>
-                {Object.entries(ComponentsList).sort((a,b)=> a[0].localeCompare(b[0])).map(([key, name])=> {
+                {[...ComponentObject].sort((a,b)=> a.name.localeCompare(b.name)).map((component)=> {
                     return (
-                        <StyledLink key={key} to={`/playground/${key}`} activeClassName='active'><LinkText title={name}>{name}</LinkText></StyledLink>
+                        <StyledLink key={component.id} to={`/playground/${component.id}`} activeClassName='active' active={component.id === iconName}><LinkText title={component.name}>{component.name}</LinkText></StyledLink>
                     )
                 })}
             </LeftSection>
