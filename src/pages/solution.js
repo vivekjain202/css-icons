@@ -6,7 +6,7 @@ const Modal = styled.div`
     width: 100%;
     height: 100%;
     padding: 10% 20%;
-    background: rgba(0,0,0,0.2);
+    background: rgb(158 158 158 / 90%);
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -38,7 +38,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     flex: 1;
-    box-shadow: 0px 0px 20px 9px grey;
+    box-shadow: 0px 0px 20px 9px #000000ba;
 `
 const ContentContainer = styled.div`
     display: flex;

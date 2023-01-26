@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import styled from "styled-components";
 import Editor from "../editor/editor";
 import { ComponentsMap, ComponentObject } from "../components";
-import { useParams } from "react-router-dom";
-import { NavLink } from 'react-router-dom'
+import { useParams,NavLink } from "react-router-dom";
+import { Solution } from "./solution";
+
 
 const Container = styled.div`
     display: flex;
@@ -67,6 +69,7 @@ export const PreviewContainer = styled.div`
   width: 100%;
   height: calc(100% - 60px);
   background: white;
+  position: relative;
 `
 
 export const StyledIframe = styled.iframe`
@@ -95,10 +98,25 @@ const LinkText = styled.p`
     text-overflow: ellipsis;
 `
 
+const StyledButton = styled.button`
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 35px;
+    padding: 10px;
+    background: linear-gradient(to right, #e66465, #9198e5);
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    font-size: 16px;
+`
+
 export const PlayGround = () => {
     const [html, setHtml] = useState('');
     const [css, setCss] = useState('');
     const [src, setSrc] = useState('');
+    const [showSolution, setShowSolution] = useState(false)
+    const [selectedComponent, setSelectedComponent] = useState(null)
     const { iconName = 'react' } = useParams();
 
     useEffect(() => {
@@ -149,18 +167,20 @@ export const PlayGround = () => {
                 <RightSubSection>
                     <Stack>
                         <EditorContainer>
-                            <EditorHeader>RESULT</EditorHeader>
+                            <EditorHeader>LIVE PREVIEW</EditorHeader>
                             <StyledIframe srcDoc={src} sandbox='allow-scripts'/>
                         </EditorContainer>
                         <EditorContainer>
                             <EditorHeader>REFERENCE</EditorHeader>
                             <PreviewContainer>
                                 <ComponentPreview />
+                                <StyledButton onClick={() =>{setShowSolution(true);setSelectedComponent(ComponentObject.find(v => v.id === iconName))}}>Reveal Solution</StyledButton>
                             </PreviewContainer>
                         </EditorContainer>
                     </Stack>
                 </RightSubSection>
             </RightSection>
+            {showSolution && createPortal(<Solution component={selectedComponent} onClick={() => {setShowSolution(false); setSelectedComponent(null)}}/>, document.body)}
         </Container>
     )
 }
