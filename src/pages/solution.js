@@ -75,6 +75,22 @@ const PreviewEditor = styled(Editor)`
     min-height: auto;
 `
 
+// const NotesDiv = styled.div`
+//     padding-top: 10px;
+//     flex: 1;
+// `
+
+// const StyledHeading = styled.h3`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0px;
+//     padding: 0px;
+//     height: 40px;
+//     width: 100%;
+// `
+
+
 const Solution = (props) => {
     const PreviewComponent = props.component.component
     return <Modal>
@@ -85,7 +101,7 @@ const Solution = (props) => {
                 <SubSection><EditorHeader color='white' background='black'>CSS</EditorHeader><PreviewEditor minHeight='auto' language='css' displayName='CSS' value={`.xyz{some css}`}/></SubSection></ContentContainer>
             <ContentContainer>
                 <SubSection><PreviewComponent /></SubSection>
-                <SubSection><h1>Notes:</h1></SubSection>
+                {/* <SubSection><StyledHeading>Notes:</StyledHeading><NotesDiv>Some notes</NotesDiv></SubSection> */}
             </ContentContainer>
         </Container>
     </Modal>
