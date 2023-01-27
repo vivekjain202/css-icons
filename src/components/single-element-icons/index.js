@@ -73,3 +73,4 @@ export * from "./userAdd";
 export * from "./pause";
 export * from "./batteryEmpty";
 export * from "./batteryHalfEmpty";
+export * from "./clipboard";

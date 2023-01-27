@@ -72,7 +72,8 @@ import {
     Camera,
     Stats,
     UserAdd,
-    Pause
+    Pause,
+    Clipboard
   } from "./single-element-icons";
 
 import { TwitterBadge } from "./multi-element-icons/twitterBadge";
@@ -131,6 +132,7 @@ const ComponentMapData = [
   ['twitter_badge', TwitterBadge],
   ['stats', Stats],
   ['pause', Pause],
+  ['clipboard', Clipboard],
   //   // light icons
   ['battery_full', BatteryFull],
   ['battery_half_empty',BatteryHalfEmpty],
