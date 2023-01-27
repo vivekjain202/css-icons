@@ -75,7 +75,8 @@ import {
     Pause
   } from "./single-element-icons";
 
-  import { TwitterBadge } from "./multi-element-icons/twitterBadge";
+import { TwitterBadge } from "./multi-element-icons/twitterBadge";
+import { TruckFront } from "./multi-element-icons/truckFront";
 
 const ComponentMapData = [
   ['dice_one', DiceOne],
@@ -101,6 +102,7 @@ const ComponentMapData = [
   ['minus', MinusSign],
   ['multiply', MultiplySign],
   ['divide',DivideSign],
+  ['truck_front', TruckFront],
   ['gmail', Gmail],
   ['instagram', Instagram],
   ['facebook', Facebook],
