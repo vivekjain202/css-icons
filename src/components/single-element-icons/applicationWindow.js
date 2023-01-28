@@ -44,6 +44,7 @@ export const ApplicationWindow = {
             background: white;
             top: 15px;
             left: 10px;
+            box-shadow: 10px 0 0 0 yellow, 20px 0 0 0 green;
         }
     `
 }
