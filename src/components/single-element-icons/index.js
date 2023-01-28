@@ -78,3 +78,4 @@ export * from "./magnet";
 export * from "./music";
 export * from "./ticket";
 export * from "./film";
+export * from "./applicationWindow";
