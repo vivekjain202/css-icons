@@ -75,3 +75,4 @@ export * from "./batteryEmpty";
 export * from "./batteryHalfEmpty";
 export * from "./clipboard";
 export * from "./magnet";
+export * from "./music";

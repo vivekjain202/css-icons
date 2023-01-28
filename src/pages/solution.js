@@ -16,6 +16,7 @@ const Modal = styled.div`
     display: flex;
     flex: 1;
     z-index: 1001;
+    overflow: scroll;
 `
 
 const CloseButton = styled.button`
@@ -107,6 +108,7 @@ const RealtiveDiv = styled.div`
     display: flex;
     flex: 1;
     position: relative;
+    max-width: 100%;
 `
 
 
