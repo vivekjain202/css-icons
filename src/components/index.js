@@ -76,7 +76,8 @@ import {
     Clipboard,
     Magnet,
     Music,
-    Ticket
+    Ticket,
+    Film
   } from "./single-element-icons";
 
 import { TwitterBadge } from "./multi-element-icons/twitterBadge";
@@ -139,6 +140,7 @@ const ComponentMapData = [
   ['magnet', Magnet],
   ['music', Music],
   ['ticket', Ticket],
+  ['film', Film],
   //   // light icons
   ['battery_full', BatteryFull],
   ['battery_half_empty',BatteryHalfEmpty],

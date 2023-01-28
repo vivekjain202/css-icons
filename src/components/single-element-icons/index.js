@@ -77,3 +77,4 @@ export * from "./clipboard";
 export * from "./magnet";
 export * from "./music";
 export * from "./ticket";
+export * from "./film";
