@@ -80,7 +80,8 @@ import {
     Film,
     ApplicationWindow,
     MugSaucer,
-    MicroChip
+    MicroChip,
+    Wifi
   } from "./single-element-icons";
 
 import { TwitterBadge } from "./multi-element-icons/twitterBadge";
@@ -147,6 +148,7 @@ const ComponentMapData = [
   ['application_window', ApplicationWindow],
   ['mug_saucer', MugSaucer],
   ['microChip', MicroChip],
+  ['wifi', Wifi],
   //   // light icons
   ['battery_full', BatteryFull],
   ['battery_half_empty',BatteryHalfEmpty],
