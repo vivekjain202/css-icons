@@ -117,7 +117,6 @@ const Solution = (props) => {
     const options = { indent_size: 2 };
 
     function handleEsc(event) {
-        console.log(event)
         if(event.keyCode === 27 || event.code === 'escape' || event.key === 'Escape'){
             props.onClick();
         }
