@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import Editor from "../editor/editor";
 import { ComponentMap } from "../components";
-import { useParams,NavLink } from "react-router-dom";
+import { useParams,NavLink, useLocation } from "react-router-dom";
 import { Solution } from "./solution";
-
+import Context from '../indexdedDB';
 
 const Container = styled.div`
     display: flex;
@@ -111,6 +111,10 @@ const StyledButton = styled.button`
     font-size: 16px;
 `
 
+// TO DO :- Need to save data to db when we switch tab
+// i.e we made changes in playground but then clicked to home tab
+// currently in that case it is not storing data
+// we need to store data in that case as well
 export const PlayGround = () => {
     const [html, setHtml] = useState('');
     const [css, setCss] = useState('');
@@ -118,6 +122,57 @@ export const PlayGround = () => {
     const [showSolution, setShowSolution] = useState(false)
     const [selectedComponent, setSelectedComponent] = useState(null)
     const { iconName = 'react' } = useParams();
+    const location = useLocation()
+    const db = useContext(Context);
+
+    // add data to db
+    const addToDb = async () => {
+        const request = await db.addData({
+            id: iconName,
+            html: html || '',
+            css: css || ''
+        })
+
+        request.onsuccess = (data) => {
+            console.log('data saved successfully')
+        }
+    }
+
+    // get data on did mount
+    useEffect(() => {
+        async function fetchData(){
+            let request = await db.getData(iconName)
+            
+            request.onsuccess = (data) => {
+                let result = data.target.result
+                setHtml(result?.html || '')
+                setCss(result?.css || '')
+            }
+
+            request.onerror = (error) => {
+                console.log(error)
+            }
+        }
+        fetchData()
+    }, [])
+
+    // get data whenever location changes
+    useEffect(() => {
+        async function fetchData(){
+            let request = await db.getData(iconName)
+            
+            request.onsuccess = (data) => {
+                let result = data.target.result
+                setHtml(result?.html || '')
+                setCss(result?.css || '')
+            }
+
+            request.onerror = (error) => {
+                console.log(error)
+            }
+        }
+        fetchData()
+    }, [location])
 
     useEffect(() => {
         setSrc(`
@@ -135,7 +190,7 @@ export const PlayGround = () => {
             <LeftSection>
                 {[...ComponentMap.values()].sort((a,b)=> a.name.localeCompare(b.name)).map((component)=> {
                     return (
-                        <StyledLink key={component.id} to={`/playground/${component.id}`} activeClassName='active' active={component.id === iconName}><LinkText title={component.name}>{component.name}</LinkText></StyledLink>
+                        <StyledLink onClick={addToDb} key={component.id} to={`/playground/${component.id}`} activeClassName='active' active={component.id === iconName}><LinkText title={component.name}>{component.name}</LinkText></StyledLink>
                     )
                 })}
             </LeftSection>
