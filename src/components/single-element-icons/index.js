@@ -73,3 +73,12 @@ export * from "./userAdd";
 export * from "./pause";
 export * from "./batteryEmpty";
 export * from "./batteryHalfEmpty";
+export * from "./clipboard";
+export * from "./magnet";
+export * from "./music";
+export * from "./ticket";
+export * from "./film";
+export * from "./applicationWindow";
+export * from "./mugSaucer";
+export * from "./microchip";
+export * from "./wifi"

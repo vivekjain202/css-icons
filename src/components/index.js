@@ -72,10 +72,20 @@ import {
     Camera,
     Stats,
     UserAdd,
-    Pause
+    Pause,
+    Clipboard,
+    Magnet,
+    Music,
+    Ticket,
+    Film,
+    ApplicationWindow,
+    MugSaucer,
+    MicroChip,
+    Wifi
   } from "./single-element-icons";
 
-  import { TwitterBadge } from "./multi-element-icons/twitterBadge";
+import { TwitterBadge } from "./multi-element-icons/twitterBadge";
+import { TruckFront } from "./multi-element-icons/truckFront";
 
 const ComponentMapData = [
   ['dice_one', DiceOne],
@@ -101,6 +111,7 @@ const ComponentMapData = [
   ['minus', MinusSign],
   ['multiply', MultiplySign],
   ['divide',DivideSign],
+  ['truck_front', TruckFront],
   ['gmail', Gmail],
   ['instagram', Instagram],
   ['facebook', Facebook],
@@ -129,6 +140,15 @@ const ComponentMapData = [
   ['twitter_badge', TwitterBadge],
   ['stats', Stats],
   ['pause', Pause],
+  ['clipboard', Clipboard],
+  ['magnet', Magnet],
+  ['music', Music],
+  ['ticket', Ticket],
+  ['film', Film],
+  ['application_window', ApplicationWindow],
+  ['mug_saucer', MugSaucer],
+  ['microChip', MicroChip],
+  ['wifi', Wifi],
   //   // light icons
   ['battery_full', BatteryFull],
   ['battery_half_empty',BatteryHalfEmpty],
