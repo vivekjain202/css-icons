@@ -81,4 +81,5 @@ export * from "./film";
 export * from "./applicationWindow";
 export * from "./mugSaucer";
 export * from "./microchip";
-export * from "./wifi"
+export * from "./wifi";
+export * from "./video";
