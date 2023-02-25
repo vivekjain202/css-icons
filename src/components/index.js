@@ -157,10 +157,12 @@ const ComponentMapData = [
   ['gift', Gift],
   ['filter', Filter],
   ['heart', Heart],
+  ['focus', Focus],
   //   // light icons
   ['battery_full', BatteryFull],
   ['battery_half_empty',BatteryHalfEmpty],
   ['battery_empty',BatteryEmpty],
+  ['react',React],
   ['circle', Circle],
   ['semi_circle',SemiCircle],
   ['horizontal_line', HorizontalLine],
@@ -178,8 +180,6 @@ const ComponentMapData = [
   ['laptop_with_text', LaptopWithText],
   ['open_in_new_tab', OpenInNewTab],
   ['not_allowed', NotAllowed],
-  ['focus', Focus],
-  ['react',React],
   ['briefcase',BriefCase],
   ['user_add',  UserAdd]
 ]
