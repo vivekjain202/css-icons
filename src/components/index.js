@@ -88,7 +88,8 @@ import {
 
 import { TwitterBadge } from "./multi-element-icons/twitterBadge";
 import { TruckFront } from "./multi-element-icons/truckFront";
-import { Gift } from "./multi-element-icons/gift"
+import { Gift } from "./multi-element-icons/gift";
+import { Heart } from "./multi-element-icons/heart";
 
 const ComponentMapData = [
   ['dice_one', DiceOne],
@@ -155,6 +156,7 @@ const ComponentMapData = [
   ['video', Video],
   ['gift', Gift],
   ['filter', Filter],
+  ['heart', Heart],
   //   // light icons
   ['battery_full', BatteryFull],
   ['battery_half_empty',BatteryHalfEmpty],
