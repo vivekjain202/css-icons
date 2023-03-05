@@ -84,3 +84,4 @@ export * from "./microchip";
 export * from "./wifi";
 export * from "./video";
 export * from './filter';
+export * from './colorPalette'

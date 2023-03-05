@@ -83,7 +83,8 @@ import {
     MicroChip,
     Wifi,
     Video,
-    Filter
+    Filter,
+    ColorPalette
   } from "./single-element-icons";
 
 import { TwitterBadge } from "./multi-element-icons/twitterBadge";
@@ -157,6 +158,7 @@ const ComponentMapData = [
   ['gift', Gift],
   ['filter', Filter],
   ['heart', Heart],
+  ['color_palette', ColorPalette],
   ['focus', Focus],
   //   // light icons
   ['battery_full', BatteryFull],
