@@ -160,10 +160,6 @@ const ComponentMapData = [
   ['heart', Heart],
   ['color_palette', ColorPalette],
   ['focus', Focus],
-  //   // light icons
-  ['battery_full', BatteryFull],
-  ['battery_half_empty',BatteryHalfEmpty],
-  ['battery_empty',BatteryEmpty],
   ['mobile', Mobile],
   ['briefcase',BriefCase],
   ['profile', Profile],
@@ -173,6 +169,10 @@ const ComponentMapData = [
   ['semi_circle',SemiCircle],
   ['square',Square],
   ['rectangle', Reactangle],
+  //   // light icons
+  ['battery_full', BatteryFull],
+  ['battery_half_empty',BatteryHalfEmpty],
+  ['battery_empty',BatteryEmpty],
   ['horizontal_line', HorizontalLine],
   ['vertical_line',VerticalLine],
   ['react',React],
