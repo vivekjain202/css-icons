@@ -6,6 +6,7 @@ export const BriefCaseIcon = styled.div`
   border: 1px solid black;
   border-radius: 3px;
   position: relative;
+  background: black;
 
   &:before {
     content: "";
@@ -24,8 +25,8 @@ export const BriefCaseIcon = styled.div`
     position: absolute;
     width: 20px;
     height: 30px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     top: 0px;
     left: 4px;
   }
@@ -42,6 +43,7 @@ export const BriefCase = {
     border: 1px solid black;
     border-radius: 3px;
     position: relative;
+    background: black;
   }
 
   .briefcase:before {
@@ -61,8 +63,8 @@ export const BriefCase = {
     position: absolute;
     width: 20px;
     height: 30px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     top: 0px;
     left: 4px;
   }`

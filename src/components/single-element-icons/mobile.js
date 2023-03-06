@@ -6,6 +6,7 @@ export const MobileIcon = styled.div`
   border: 1px solid black;
   border-radius: 2px;
   position: relative;
+  background: black;
 
   &::before {
     content: "";
@@ -13,7 +14,7 @@ export const MobileIcon = styled.div`
     width: 7px;
     height: 2px;
     border-radius: 2px;
-    background: black;
+    background: white;
     top: 2.5px;
     left: 5px;
   }
@@ -24,7 +25,7 @@ export const MobileIcon = styled.div`
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid white;
     bottom: 2px;
     left: 7px;
   }
