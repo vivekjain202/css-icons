@@ -4,6 +4,7 @@ export const ReactangleIcon = styled.div`
   width: 50px;
   height: 40px;
   border: 1px solid black;
+  background: black;
 `;
 
 export const Reactangle = {
@@ -16,6 +17,7 @@ export const Reactangle = {
       width: 50px;
       height: 40px;
       border: 1px solid black;
+      background: black;
     }
   `
 }

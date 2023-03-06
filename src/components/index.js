@@ -81,11 +81,16 @@ import {
     ApplicationWindow,
     MugSaucer,
     MicroChip,
-    Wifi
+    Wifi,
+    Video,
+    Filter,
+    ColorPalette
   } from "./single-element-icons";
 
 import { TwitterBadge } from "./multi-element-icons/twitterBadge";
 import { TruckFront } from "./multi-element-icons/truckFront";
+import { Gift } from "./multi-element-icons/gift";
+import { Heart } from "./multi-element-icons/heart";
 
 const ComponentMapData = [
   ['dice_one', DiceOne],
@@ -149,31 +154,36 @@ const ComponentMapData = [
   ['mug_saucer', MugSaucer],
   ['microChip', MicroChip],
   ['wifi', Wifi],
+  ['video', Video],
+  ['gift', Gift],
+  ['filter', Filter],
+  ['heart', Heart],
+  ['color_palette', ColorPalette],
+  ['focus', Focus],
+  ['mobile', Mobile],
+  ['briefcase',BriefCase],
+  ['profile', Profile],
+  ['user_add',  UserAdd],
+  ['menu_horizontal', MenuIconHorizontal],
+  ['circle', Circle],
+  ['semi_circle',SemiCircle],
+  ['square',Square],
+  ['rectangle', Reactangle],
   //   // light icons
   ['battery_full', BatteryFull],
   ['battery_half_empty',BatteryHalfEmpty],
   ['battery_empty',BatteryEmpty],
-  ['circle', Circle],
-  ['semi_circle',SemiCircle],
   ['horizontal_line', HorizontalLine],
   ['vertical_line',VerticalLine],
-  ['square',Square],
-  ['rectangle', Reactangle],
-  ['cross', CrossSign],
-  ['star',  Star],
-  ['triple_dot_horizontal',TripleDotsHorizontal],
-  ['triple_dot_vertical', TripleDotsVertical],
-  ['menu_horizontal', MenuIconHorizontal],
-  ['profile', Profile],
-  ['mobile', Mobile],
+  ['react',React],
+  // ['cross', CrossSign],
+  // ['star',  Star],
+  // ['triple_dot_horizontal',TripleDotsHorizontal],
+  // ['triple_dot_vertical', TripleDotsVertical],
   ['laptop', Laptop],
   ['laptop_with_text', LaptopWithText],
   ['open_in_new_tab', OpenInNewTab],
   ['not_allowed', NotAllowed],
-  ['focus', Focus],
-  ['react',React],
-  ['briefcase',BriefCase],
-  ['user_add',  UserAdd]
 ]
 
 export const ComponentMap = new Map(ComponentMapData)

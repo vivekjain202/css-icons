@@ -6,6 +6,7 @@ export const ProfileIcon = styled.div`
   border-radius: 50%;
   border: 1px solid black;
   position: relative;
+  background: black;
 
   &::after {
     content: "";
@@ -14,9 +15,10 @@ export const ProfileIcon = styled.div`
     position: absolute;
     border: 1px solid black;
     border-bottom: 0px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 12px 12px 0px 0px;
     top: 20px;
     left: -6.5px;
+    background: black;
   }
 `;
 
@@ -32,6 +34,7 @@ export const Profile = {
       border-radius: 50%;
       border: 1px solid black;
       position: relative;
+      background: black;
     }
 
     .profile::after {
@@ -41,9 +44,10 @@ export const Profile = {
       position: absolute;
       border: 1px solid black;
       border-bottom: 0px;
-      border-radius: 10px 10px 0px 0px;
+      border-radius: 12px 12px 0px 0px;
       top: 20px;
       left: -6.5px;
+      background: black;
     }
   `
 }
