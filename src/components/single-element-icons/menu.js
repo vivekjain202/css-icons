@@ -1,21 +1,11 @@
 import styled from "styled-components";
 
 export const MenuIconHorizontalIcon = styled.div`
-  width: 20px;
-  height: 16px;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 1px;
-    background: black;
-    top: 5px;
-    border-bottom: 1px solid black;
-  }
+  width: 40px;
+  height: 8px;
+  background: black;
+  border-radius: 3px;
+  box-shadow: 0px -15px 0 black, 0px 15px 0 black;
 `;
 
 export const MenuIconHorizontal = {
@@ -25,21 +15,11 @@ export const MenuIconHorizontal = {
   html: `<div class='menu'></div>`,
   css: `
     .menu {
-      width: 20px;
-      height: 16px;
-      border-bottom: 2px solid black;
-      border-top: 2px solid black;
-      position: relative;
-    }
-
-    .menu::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 1px;
+      width: 40px;
+      height: 8px;
       background: black;
-      top: 5px;
-      border-bottom: 1px solid black;
+      border-radius: 3px;
+      box-shadow: 0px -15px 0 black, 0px 15px 0 black;
     }
   `
 }

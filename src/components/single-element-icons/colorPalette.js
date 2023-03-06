@@ -36,9 +36,9 @@ export const ColorPalette = {
     name: 'Color Palette',
     id: 'color_palette',
     component: ColorPaletteIcon,
-    html: `<div id='colorPalette'></div>`,
+    html: `<div class='colorPalette'></div>`,
     css: `
-        #colorPalette {
+        .colorPalette {
             width: 50px;
             height: 50px;
             background: black;
@@ -46,7 +46,7 @@ export const ColorPalette = {
             position: relative;
         }
 
-        #colorPalette:before {
+        .colorPalette:before {
             content: '';
             position: absolute;
             width: 7px;
@@ -58,7 +58,7 @@ export const ColorPalette = {
             box-shadow: 2px -15px 0 0 white, 12px -24px 0 0 white, 25px -22px 0 0 white;
         }
 
-        #colorPalette:after {
+        .colorPalette:after {
             content: '';
             position: absolute;
             width: 26px;

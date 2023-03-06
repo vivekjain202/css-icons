@@ -5,6 +5,7 @@ export const CircleIcon = styled.div`
   height: 50px;
   border-radius: 50%;
   border: 1px solid black;
+  background: black;
 `;
 
 
@@ -19,6 +20,7 @@ export const Circle = {
             height: 50px;
             border-radius: 50%;
             border: 1px solid black;
+            background: black;
         }
     `
 }

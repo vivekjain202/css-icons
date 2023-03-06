@@ -13,6 +13,7 @@ export const SemiCircleIcon = styled.div`
   border: 1px solid black;
   position: relative;
   box-sizing: border-box;
+  background: black;
 
   &::after {
     content: "";

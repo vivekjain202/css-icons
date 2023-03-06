@@ -4,6 +4,7 @@ export const SquareIcon = styled.div`
   width: 50px;
   height: 50px;
   border: 1px solid black;
+  background: black;
 `;
 
 export const Square = {
@@ -16,6 +17,7 @@ export const Square = {
       width: 50px;
       height: 50px;
       border: 1px solid black;
+      background: black;
     }
   `
 }
