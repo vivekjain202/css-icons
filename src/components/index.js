@@ -91,6 +91,7 @@ import { TwitterBadge } from "./multi-element-icons/twitterBadge";
 import { TruckFront } from "./multi-element-icons/truckFront";
 import { Gift } from "./multi-element-icons/gift";
 import { Heart } from "./multi-element-icons/heart";
+import { Mask } from './multi-element-icons/mask';
 
 const ComponentMapData = [
   ['dice_one', DiceOne],
@@ -158,6 +159,7 @@ const ComponentMapData = [
   ['gift', Gift],
   ['filter', Filter],
   ['heart', Heart],
+  ['mask', Mask],
   ['color_palette', ColorPalette],
   ['focus', Focus],
   ['mobile', Mobile],
