@@ -84,7 +84,8 @@ import {
     Wifi,
     Video,
     Filter,
-    ColorPalette
+    ColorPalette,
+    Calculator
   } from "./single-element-icons";
 
 import { TwitterBadge } from "./multi-element-icons/twitterBadge";
@@ -160,6 +161,7 @@ const ComponentMapData = [
   ['filter', Filter],
   ['heart', Heart],
   ['mask', Mask],
+  ['calculator', Calculator],
   ['color_palette', ColorPalette],
   ['focus', Focus],
   ['mobile', Mobile],
