@@ -85,7 +85,8 @@ import {
     Video,
     Filter,
     ColorPalette,
-    Calculator
+    Calculator,
+    WatermelonSlice
   } from "./single-element-icons";
 
 import { TwitterBadge } from "./multi-element-icons/twitterBadge";
@@ -162,6 +163,7 @@ const ComponentMapData = [
   ['heart', Heart],
   ['mask', Mask],
   ['calculator', Calculator],
+  ['watermelon_slice', WatermelonSlice],
   ['color_palette', ColorPalette],
   ['focus', Focus],
   ['mobile', Mobile],
