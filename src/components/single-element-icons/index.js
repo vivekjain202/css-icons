@@ -86,3 +86,4 @@ export * from "./video";
 export * from './filter';
 export * from './colorPalette';
 export * from './calculator';
+export * from './watermelonSlice';
