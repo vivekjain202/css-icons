@@ -94,6 +94,7 @@ import { TruckFront } from "./multi-element-icons/truckFront";
 import { Gift } from "./multi-element-icons/gift";
 import { Heart } from "./multi-element-icons/heart";
 import { Mask } from './multi-element-icons/mask';
+import { FighterPlane } from './multi-element-icons/fighterPlane';
 
 const ComponentMapData = [
   ['dice_one', DiceOne],
@@ -137,6 +138,7 @@ const ComponentMapData = [
   ['lock_open',LockOpen],
   ['dialpad',Dialpad],
   ['pokemon',  Pokemon],
+  ['fighter_plane', FighterPlane],
   ['calendar', Calendar],
   ['settings_slider', SettingsSlider],
   ['mouse',Mouse],
