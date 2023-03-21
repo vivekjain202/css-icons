@@ -87,3 +87,4 @@ export * from './filter';
 export * from './colorPalette';
 export * from './calculator';
 export * from './watermelonSlice';
+export * from './airplay';

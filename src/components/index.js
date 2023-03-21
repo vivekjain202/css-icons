@@ -86,7 +86,8 @@ import {
     Filter,
     ColorPalette,
     Calculator,
-    WatermelonSlice
+    WatermelonSlice,
+    Airplay
   } from "./single-element-icons";
 
 import { TwitterBadge } from "./multi-element-icons/twitterBadge";
@@ -155,6 +156,7 @@ const ComponentMapData = [
   ['music', Music],
   ['ticket', Ticket],
   ['film', Film],
+  ['airplay', Airplay],
   ['application_window', ApplicationWindow],
   ['mug_saucer', MugSaucer],
   ['microChip', MicroChip],
