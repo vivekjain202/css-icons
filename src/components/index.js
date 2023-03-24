@@ -96,6 +96,7 @@ import { Gift } from "./multi-element-icons/gift";
 import { Heart } from "./multi-element-icons/heart";
 import { Mask } from './multi-element-icons/mask';
 import { FighterPlane } from './multi-element-icons/fighterPlane';
+import { Boombox } from "./multi-element-icons/boombox";
 
 const ComponentMapData = [
   ['dice_one', DiceOne],
@@ -154,6 +155,7 @@ const ComponentMapData = [
   ['clipboard', Clipboard],
   ['magnet', Magnet],
   ['music', Music],
+  ['boombox', Boombox],
   ['ticket', Ticket],
   ['film', Film],
   ['airplay', Airplay],
